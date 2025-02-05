@@ -1,0 +1,1725 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--~~~~~~~~~~~~~~~ Favicon ~~~~~~~~~~~~~~~-->
+    <link rel="shortcut icon" href="https://meshtastic.org/design/web/favicon.ico" type="image/x-icon">
+
+    <!--~~~~~~~~~~~~~~~ Remix Icon ~~~~~~~~~~~~~~~-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+
+    <!--~~~~~~~~~~~~~~~ Swiper's CSS ~~~~~~~~~~~~~~~-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./output.css">
+    <title>IndoMesh || Meshtastic Indonesia || meshtastic.my.id </title>
+</head>
+
+<body>
+    <!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
+    <header id="navbar" class="bg-green-400/80 fixed w-full top-0 left-0 z-50">
+        <nav class="container flex items-center justify-between h-16 sm:h-20">
+            <div class="font-Lobster text-3xl md:text-3xl sm:text-2xl"><i
+                    class="text-green-700 ri-base-station-line"></i> IndoMesh</div>
+
+            <div id="nav-menu"
+                class="absolute top-0 left-[-100%] min-h-[80vh] w-full bg-green-400/80 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto">
+                <ul class="flex flex-col items-center gap-8 lg:flex-row">
+                    <li>
+                        <a href="/" class="nav-link shadow-md">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="tentang.html" class="nav-link">Pelajari</a>
+                    </li>
+
+                    <li>
+                        <a href="#pelajari" class="nav-link active">Alat</a>
+                    </li>
+
+                    <li>
+                        <a href="review.html" class="nav-link">Review</a>
+                    </li>
+                </ul>
+                <!-- https://remixicon.com/ -->
+                <div class="absolute bottom-0 -right-10 opacity-90 lg:hidden">
+                    <img src="assets/img/leaf-1.png" alt="leaf_image" class="w-32">
+                </div>
+
+                <div class="absolute -top-5 -left-5 rotate-90 opacity-90 lg:hidden">
+                    <img src="assets/img/leaf-2.png" alt="leaf_image" class="w-32">
+                </div>
+            </div>
+
+            <div class="text-xl sm:text-3xl cursor-pointer z-50 lg:hidden">
+                <i class="ri-menu-4-line" id="hamburger"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+
+
+
+        <!--~~~~~~~~~~~~~~~ Pelajari ~~~~~~~~~~~~~~~-->
+        <section id="pelajari" class="bg-green-600">
+            <div class="popular__top flex flex-col items-center gap-3 text-center mb-40">
+                <h2 class="title !text-white">Supported Devices</h2>
+                <p class="!text-white max-w-2xl">Follow instruction for more</p>
+            </div>
+
+            <div
+                class="container w-full grid grid-cols-1 gap-x-8 gap-y-36 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <!-- card 1 -->
+                <div class="popular__card bg-green-700 p-10 pt-20 rounded-2xl relative">
+                    <img src="./assets/images/tlora-v2-1-1_6.svg" alt="popular_image"
+                        class="max-h-36 absolute -top-3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+                    <p class="!text-white italic">esp32 - LilyGo</p>
+                    <h3 class="!text-white text-2xl">LILYGO T-LoRa V2.1-1.6</h3>
+
+                    <div class="text-green-600 text-xs py-3">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Tokopedia">
+                            <img src="./assets/images/favicon-32.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Shopee">
+                            <img src="./assets/images/icon_favicon_1_32.0Wecxv.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp470K</p>
+                        <a href="https://www.aliexpress.com/item/1005005544631434.html" target="_blank"
+                            title="Aliexpress">
+                            <img src="./assets/images/images_eng_wholesale_icon_aliexpress.png" alt="popular_image"
+                                class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">$15.60</p>
+                        <a href="https://lilygo.cc/products/lora3" target="_blank" title="Lilygo">
+                            <img src="./assets/images/lilygo.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+                <div class="popular__card bg-green-700 p-4 pt-20 rounded-md relative">
+                    <img src="./assets/images/tbeam.svg" alt="popular_image"
+                        class="max-h-36 absolute -top-3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+                    <p class="!text-white italic">esp32 - LilyGo</p>
+                    <h3 class="!text-white text-2xl">LILYGO T-Beam</h3>
+
+                    <div class="text-green-600 text-xs py-3">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp798K</p>
+                        <a href="https://tokopedia.link/DOk9xaVOEQb" target="_blank" title="Tokopedia">
+                            <img src="./assets/images/favicon-32.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp915K</p>
+                        <a href="https://shopee.co.id/LILYGO%C2%AE-TTGO-Meshtastic-T-Beam-V1.2-ESP32-LoRa-433Mhz-GPS-NEO-6M-Soldered-OLED-LCD-i.164926787.28663622625?"
+                            target="_blank" title="Shopee">
+                            <img src="./assets/images/icon_favicon_1_32.0Wecxv.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp570K</p>
+                        <a href="https://www.aliexpress.com/item/1005003088139358.html?" target="_blank"
+                            title="Aliexpress">
+                            <img src="./assets/images/images_eng_wholesale_icon_aliexpress.png" alt="popular_image"
+                                class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">$30.77</p>
+                        <a href="https://lilygo.cc/products/t-beam" target="_blank" title="Lilygo">
+                            <img src="./assets/images/lilygo.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- card 3 -->
+                <div class="popular__card bg-green-700 p-10 pt-20 rounded-md relative">
+                    <img src="./assets/images/t-echo.svg" alt="popular_image"
+                        class="max-h-36 absolute -top-3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+                    <p class="!text-white italic">nrf52840 - LilyGo</p>
+                    <h3 class="!text-white text-2xl">LILYGO T-Echo</h3>
+
+                    <div class="text-green-600 text-xs py-3">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp2791K</p>
+                        <a href="https://tokopedia.link/tC9E3XVzGQb" target="_blank" title="Tokopedia">
+                            <img src="./assets/images/favicon-32.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Shopee">
+                            <img src="./assets/images/icon_favicon_1_32.0Wecxv.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp1000K</p>
+                        <a href="https://www.aliexpress.com/item/1005003026107533.html?" target="_blank"
+                            title="Aliexpress">
+                            <img src="./assets/images/images_eng_wholesale_icon_aliexpress.png" alt="popular_image"
+                                class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">$54.41</p>
+                        <a href="https://lilygo.cc/products/t-echo-lilygo" target="_blank" title="Lilygo">
+                            <img src="./assets/images/lilygo.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- card 4 -->
+                <div class="popular__card bg-green-700 p-10 pt-20 rounded-md relative">
+                    <img src="./assets/images/rak4631_case.svg" alt="popular_image"
+                        class="max-h-36 absolute -top-3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+                    <p class="!text-white italic">nrf52840 - RAK</p>
+                    <h3 class="!text-white text-2xl">RAK WisBlock 4631</h3>
+
+                    <div class="text-green-600 text-xs py-3">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp3810K</p>
+                        <a href="https://tokopedia.link/9BuUuVpBGQb" target="_blank" title="Tokopedia">
+                            <img src="./assets/images/favicon-32.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Shopee">
+                            <img src="./assets/images/icon_favicon_1_32.0Wecxv.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp675K</p>
+                        <a href="https://www.aliexpress.com/item/1005006672999519.html?" target="_blank"
+                            title="Aliexpress">
+                            <img src="./assets/images/images_eng_wholesale_icon_aliexpress.png" alt="popular_image"
+                                class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">$17.99</p>
+                        <a href="https://store.rakwireless.com/products/rak4631-lpwan-node" target="_blank"
+                            title="RAK Store">
+                            <img src="./assets/images/rak.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- card 5 -->
+                <div class="popular__card bg-green-700 p-10 pt-20 rounded-md relative">
+                    <img src="./assets/images/tbeam-s3-core.svg" alt="popular_image"
+                        class="max-h-36 absolute -top-3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+                    <p class="!text-white italic">esp32-s3 - LilyGo</p>
+                    <h3 class="!text-white text-2xl">LILYGO T-Beam Supreme</h3>
+
+                    <div class="text-green-600 text-xs py-3">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp2465K</p>
+                        <a href="https://tokopedia.link/XzVIYJiAGQb" target="_blank" title="Tokopedia">
+                            <img src="./assets/images/favicon-32.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Shopee">
+                            <img src="./assets/images/icon_favicon_1_32.0Wecxv.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp1120K</p>
+                        <a href="https://www.aliexpress.com/item/1005005418286231.html?" target="_blank"
+                            title="Aliexpress">
+                            <img src="./assets/images/images_eng_wholesale_icon_aliexpress.png" alt="popular_image"
+                                class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">$42.00</p>
+                        <a href="https://lilygo.cc/products/t-beam-supreme" target="_blank" title="Lilygo">
+                            <img src="./assets/images/lilygo.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- card 6 -->
+                <div class="popular__card bg-green-700 p-10 pt-20 rounded-md relative">
+                    <img src="./assets/images/tlora-t3s3-v1.svg" alt="popular_image"
+                        class="max-h-36 absolute -top-3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+                    <p class="!text-white italic">esp32-s3 - LilyGo</p>
+                    <h3 class="!text-white text-2xl">LILYGO T-LoRa T3-S3</h3>
+
+                    <div class="text-green-600 text-xs py-3">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp926K</p>
+                        <a href="https://tokopedia.link/w55I5CoAGQb" target="_blank" title="Tokopedia">
+                            <img src="./assets/images/favicon-32.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Shopee">
+                            <img src="./assets/images/icon_favicon_1_32.0Wecxv.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp240K</p>
+                        <a href="https://www.aliexpress.com/item/1005004627139838.html?" target="_blank"
+                            title="Aliexpress">
+                            <img src="./assets/images/images_eng_wholesale_icon_aliexpress.png" alt="popular_image"
+                                class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">$16.55</p>
+                        <a href="https://lilygo.cc/products/t3s3-v1-0" target="_blank" title="Lilygo">
+                            <img src="./assets/images/lilygo.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- card 7 -->
+                <div class="popular__card bg-green-700 p-10 pt-20 rounded-md relative">
+                    <img src="./assets/images/tlora-t3s3-epaper.svg" alt="popular_image"
+                        class="max-h-36 absolute -top-3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+                    <p class="!text-white italic">esp32-s3 - LilyGo</p>
+                    <h3 class="!text-white text-2xl">LILYGO T-LoRa T3-S3 E-Paper</h3>
+
+                    <div class="text-green-600 text-xs py-3">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp380K</p>
+                        <a href="https://tokopedia.link/JoB3eBzEGQb" target="_blank" title="Tokopedia">
+                            <img src="./assets/images/favicon-32.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp406K</p>
+                        <a href="https://shopee.co.id/Interface-Lilygo-Ttgo-T5-E-Paper-2.13-Inch-Screen-Depg0213Bn-Arduino-i.201340449.19873490342?"
+                            target="_blank" title="Shopee">
+                            <img src="./assets/images/icon_favicon_1_32.0Wecxv.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp386K</p>
+                        <a href="https://www.aliexpress.com/item/1005007234428845.html?" target="_blank"
+                            title="Aliexpress">
+                            <img src="./assets/images/images_eng_wholesale_icon_aliexpress.png" alt="popular_image"
+                                class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">$23.61</p>
+                        <a href="https://lilygo.cc/products/ts-s3-epaper" target="_blank" title="Lilygo">
+                            <img src="./assets/images/lilygo.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- card 8 -->
+                <div class="popular__card bg-green-700 p-10 pt-20 rounded-md relative">
+                    <img src="./assets/images/wio-tracker-wm1110.svg" alt="popular_image"
+                        class="max-h-36 absolute -top-3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+                    <p class="!text-white italic">nrf52840 - Seeed</p>
+                    <h3 class="!text-white text-2xl">Seeed Wio WM1110 Tracker</h3>
+
+                    <div class="text-green-600 text-xs py-3">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Tokopedia">
+                            <img src="./assets/images/favicon-32.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Shopee">
+                            <img src="./assets/images/icon_favicon_1_32.0Wecxv.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp490K</p>
+                        <a href="https://www.aliexpress.com/item/1005007167072530.html?" target="_blank"
+                            title="Aliexpress">
+                            <img src="./assets/images/images_eng_wholesale_icon_aliexpress.png" alt="popular_image"
+                                class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">$29.90</p>
+                        <a href="https://www.seeedstudio.com/Wio-Tracker-1110-Dev-Board-p-5799.html" target="_blank"
+                            title="Seeed">
+                            <img src="./assets/images/seeed.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- card 9 -->
+                <div class="popular__card bg-green-700 p-10 pt-20 rounded-md relative">
+                    <img src="./assets/images/RAK_WisMesh_Repeater-removebg-preview.png" alt="popular_image"
+                        class="max-h-36 absolute -top-3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+                    <p class="!text-white italic">nrf52840 - RAK</p>
+                    <h3 class="!text-white text-2xl">RAK WisMesh Repeater</h3>
+
+                    <div class="text-green-600 text-xs py-3">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Tokopedia">
+                            <img src="./assets/images/favicon-32.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Shopee">
+                            <img src="./assets/images/icon_favicon_1_32.0Wecxv.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Aliexpress">
+                            <img src="./assets/images/images_eng_wholesale_icon_aliexpress.png" alt="popular_image"
+                                class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">$99.00</p>
+                        <a href="https://store.rakwireless.com/products/wismesh-repeater" target="_blank"
+                            title="RAK Store">
+                            <img src="./assets/images/rak.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- card 10 -->
+                <div class="popular__card bg-green-700 p-10 pt-20 rounded-md relative">
+                    <img src="./assets/images/heltec-v3-case.svg" alt="popular_image"
+                        class="max-h-36 absolute -top-3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+                    <p class="!text-white italic">esp32-s3 - Heltec</p>
+                    <h3 class="!text-white text-2xl">Heltec V3</h3>
+
+                    <div class="text-green-600 text-xs py-3">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp480K</p>
+                        <a href="https://tokopedia.link/P8ZJ7GJBGQb" target="_blank" title="Tokopedia">
+                            <img src="./assets/images/favicon-32.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Shopee">
+                            <img src="./assets/images/icon_favicon_1_32.0Wecxv.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp207K</p>
+                        <a href="https://www.aliexpress.com/item/1005007752194012.html" target="_blank"
+                            title="Aliexpress">
+                            <img src="./assets/images/images_eng_wholesale_icon_aliexpress.png" alt="popular_image"
+                                class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">$12.99</p>
+                        <a href="https://heltec.org/project/wifi-kit32-v3/" target="_blank" title="Heltec">
+                            <img src="./assets/images/heltec.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- card 11 -->
+                <div class="popular__card bg-green-700 p-10 pt-20 rounded-md relative">
+                    <img src="./assets/images/heltec-wsl-v3.svg" alt="popular_image"
+                        class="max-h-36 absolute -top-3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+                    <p class="!text-white italic">esp32-s3 - Heltec</p>
+                    <h3 class="!text-white text-2xl">Heltec Wireless Stick Lite V3</h3>
+
+                    <div class="text-green-600 text-xs py-3">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp375K</p>
+                        <a href="https://tokopedia.link/RXrGiUxAGQb" target="_blank" title="Tokopedia">
+                            <img src="./assets/images/favicon-32.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Shopee">
+                            <img src="./assets/images/icon_favicon_1_32.0Wecxv.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp180K</p>
+                        <a href="https://www.aliexpress.com/item/1005006960538238.html?" target="_blank"
+                            title="Aliexpress">
+                            <img src="./assets/images/images_eng_wholesale_icon_aliexpress.png" alt="popular_image"
+                                class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">$14.90</p>
+                        <a href="https://heltec.org/project/wireless-stick-lite-v2/" target="_blank" title="Heltec">
+                            <img src="./assets/images/heltec.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- card 12 -->
+                <div class="popular__card bg-green-700 p-10 pt-20 rounded-md relative">
+                    <img src="./assets/images/heltec-wireless-tracker.svg" alt="popular_image"
+                        class="max-h-36 absolute -top-3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+                    <p class="!text-white italic">esp32-s3 - Heltec</p>
+                    <h3 class="!text-white text-2xl">Heltec Wireless Tracker V1.1</h3>
+
+                    <div class="text-green-600 text-xs py-3">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp1036K</p>
+                        <a href="https://tokopedia.link/fMZ15JFAGQb" target="_blank" title="Tokopedia">
+                            <img src="./assets/images/favicon-32.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Shopee">
+                            <img src="./assets/images/icon_favicon_1_32.0Wecxv.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp216K</p>
+                        <a href="https://www.aliexpress.com/item/1005007773011929.html" target="_blank"
+                            title="Aliexpress">
+                            <img src="./assets/images/images_eng_wholesale_icon_aliexpress.png" alt="popular_image"
+                                class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">$22.90</p>
+                        <a href="https://heltec.org/project/wireless-tracker/" target="_blank" title="Heltec">
+                            <img src="./assets/images/heltec.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <!-- card 13 -->
+                <div class="popular__card bg-green-700 p-10 pt-20 rounded-md relative">
+                    <img src="./assets/images/heltec-wireless-paper.svg" alt="popular_image"
+                        class="max-h-36 absolute -top-3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+                    <p class="!text-white italic">esp32-s3 - Heltec</p>
+                    <h3 class="!text-white text-2xl">Heltec Wireless Paper</h3>
+
+                    <div class="text-green-600 text-xs py-3">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Tokopedia">
+                            <img src="./assets/images/favicon-32.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Shopee">
+                            <img src="./assets/images/icon_favicon_1_32.0Wecxv.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp206K</p>
+                        <a href="https://www.aliexpress.com/item/1005007588196045.html?" target="_blank"
+                            title="Aliexpress">
+                            <img src="./assets/images/images_eng_wholesale_icon_aliexpress.png" alt="popular_image"
+                                class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">$15.90</p>
+                        <a href="https://heltec.org/project/wireless-paper/" target="_blank" title="Heltec">
+                            <img src="./assets/images/heltec.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- card 14 -->
+                <div class="popular__card bg-green-700 p-10 pt-20 rounded-md relative">
+                    <img src="./assets/images/t-deck.svg" alt="popular_image"
+                        class="max-h-36 absolute -top-3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+                    <p class="!text-white italic">esp32-s3 - LilyGo</p>
+                    <h3 class="!text-white text-2xl">LILYGO T-Deck</h3>
+
+                    <div class="text-green-600 text-xs py-3">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Tokopedia">
+                            <img src="./assets/images/favicon-32.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Shopee">
+                            <img src="./assets/images/icon_favicon_1_32.0Wecxv.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp1000K</p>
+                        <a href="https://www.aliexpress.com/item/1005007568074083.html?" target="_blank"
+                            title="Aliexpress">
+                            <img src="./assets/images/images_eng_wholesale_icon_aliexpress.png" alt="popular_image"
+                                class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">$43.08</p>
+                        <a href="https://lilygo.cc/products/t-deck" target="_blank" title="Lilygo">
+                            <img src="./assets/images/lilygo.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- card 15 -->
+                <div class="popular__card bg-green-700 p-10 pt-20 rounded-md relative">
+                    <img src="./assets/images/t-watch-s3.svg" alt="popular_image"
+                        class="max-h-36 absolute -top-3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+                    <p class="!text-white italic">esp32-s3 - LilyGo</p>
+                    <h3 class="!text-white text-2xl">LILYGO T-Watch S3</h3>
+
+                    <div class="text-green-600 text-xs py-3">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp1490K</p>
+                        <a href="https://tokopedia.link/B6QeIRLAGQb" target="_blank" title="Tokopedia">
+                            <img src="./assets/images/favicon-32.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Shopee">
+                            <img src="./assets/images/icon_favicon_1_32.0Wecxv.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp980K</p>
+                        <a href="https://www.aliexpress.com/item/1005008374400898.html?" target="_blank"
+                            title="Aliexpress">
+                            <img src="./assets/images/images_eng_wholesale_icon_aliexpress.png" alt="popular_image"
+                                class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">$42.98</p>
+                        <a href="https://lilygo.cc/products/t-watch-s3" target="_blank" title="Lilygo">
+                            <img src="./assets/images/lilygo.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- card 16 -->
+                <div class="popular__card bg-green-700 p-10 pt-20 rounded-md relative">
+                    <img src="./assets/images/heltec-ht62-esp32c3-sx1262.svg" alt="popular_image"
+                        class="max-h-36 absolute -top-3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+                    <p class="!text-white italic">esp32-c3 - Heltec</p>
+                    <h3 class="!text-white text-2xl">Heltec HT62</h3>
+
+                    <div class="text-green-600 text-xs py-3">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp185K</p>
+                        <a href="https://tokopedia.link/u8BhMuWAGQb" target="_blank" title="Tokopedia">
+                            <img src="./assets/images/favicon-32.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Shopee">
+                            <img src="./assets/images/icon_favicon_1_32.0Wecxv.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp180K</p>
+                        <a href="https://www.aliexpress.com/item/1005008291414439.html?" target="_blank"
+                            title="Aliexpress">
+                            <img src="./assets/images/images_eng_wholesale_icon_aliexpress.png" alt="popular_image"
+                                class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">$6.90</p>
+                        <a href="https://heltec.org/project/ht-ct62/" target="_blank" title="Heltec">
+                            <img src="./assets/images/heltec.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <!-- card 17 -->
+                <div class="popular__card bg-green-700 p-10 pt-20 rounded-md relative">
+                    <img src="./assets/images/heltec-vision-master-t190.svg" alt="popular_image"
+                        class="max-h-36 absolute -top-3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+                    <p class="!text-white italic">esp32-s3 - Heltec</p>
+                    <h3 class="!text-white text-2xl">Heltec Vision Master T190</h3>
+
+                    <div class="text-green-600 text-xs py-3">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp675K</p>
+                        <a href="https://tokopedia.link/3hK4NW4AGQb" target="_blank" title="Tokopedia">
+                            <img src="./assets/images/favicon-32.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Shopee">
+                            <img src="./assets/images/icon_favicon_1_32.0Wecxv.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp195K</p>
+                        <a href="https://www.aliexpress.com/item/1005007759169112.html?" target="_blank"
+                            title="Aliexpress">
+                            <img src="./assets/images/images_eng_wholesale_icon_aliexpress.png" alt="popular_image"
+                                class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">$20.00</p>
+                        <a href="https://heltec.org/project/vision-master-t190/" target="_blank" title="Heltec">
+                            <img src="./assets/images/heltec.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- card 18 -->
+                <div class="popular__card bg-green-700 p-10 pt-20 rounded-md relative">
+                    <img src="./assets/images/heltec-vision-master-e213.svg" alt="popular_image"
+                        class="max-h-36 absolute -top-3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+                    <p class="!text-white italic">esp32-s3 - Heltec</p>
+                    <h3 class="!text-white text-2xl">Heltec Vision Master E213</h3>
+
+                    <div class="text-green-600 text-xs py-3">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Tokopedia">
+                            <img src="./assets/images/favicon-32.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Shopee">
+                            <img src="./assets/images/icon_favicon_1_32.0Wecxv.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp186K</p>
+                        <a href="https://www.aliexpress.com/item/1005007578642642.html" target="_blank"
+                            title="Aliexpress">
+                            <img src="./assets/images/images_eng_wholesale_icon_aliexpress.png" alt="popular_image"
+                                class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">$20.90</p>
+                        <a href="https://heltec.org/project/vision-master-e213/" target="_blank" title="Heltec">
+                            <img src="./assets/images/heltec.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- card 19 -->
+                <div class="popular__card bg-green-700 p-10 pt-20 rounded-md relative">
+                    <img src="./assets/images/heltec-vision-master-e290.svg" alt="popular_image"
+                        class="max-h-36 absolute -top-3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+                    <p class="!text-white italic">esp32-s3 - Heltec</p>
+                    <h3 class="!text-white text-2xl">Heltec Vision Master E290</h3>
+
+                    <div class="text-green-600 text-xs py-3">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Tokopedia">
+                            <img src="./assets/images/favicon-32.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Shopee">
+                            <img src="./assets/images/icon_favicon_1_32.0Wecxv.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp327K</p>
+                        <a href="https://www.aliexpress.com/item/1005007544114517.html?" target="_blank"
+                            title="Aliexpress">
+                            <img src="./assets/images/images_eng_wholesale_icon_aliexpress.png" alt="popular_image"
+                                class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">$21.90</p>
+                        <a href="https://heltec.org/project/vision-master-e290/" target="_blank" title="Heltec">
+                            <img src="./assets/images/heltec.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- card 20 -->
+                <div class="popular__card bg-green-700 p-10 pt-20 rounded-md relative">
+                    <img src="./assets/images/heltec-mesh-node-t114.svg" alt="popular_image"
+                        class="max-h-36 absolute -top-3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+                    <img src="./assets/images/heltec-mesh-node-t114-case.svg" alt="popular_image"
+                        class="max-h-36 absolute -top-3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+                    <p class="!text-white italic">nrf52840 - Heltec</p>
+                    <h3 class="!text-white text-2xl">Heltec Mesh Node T114</h3>
+
+                    <div class="text-green-600 text-xs py-3">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp1813K</p>
+                        <a href="https://tokopedia.link/h6anOigBGQb" target="_blank" title="Tokopedia">
+                            <img src="./assets/images/favicon-32.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Shopee">
+                            <img src="./assets/images/icon_favicon_1_32.0Wecxv.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp251K</p>
+                        <a href="https://www.aliexpress.com/item/1005008317971462.html?" target="_blank"
+                            title="Aliexpress">
+                            <img src="./assets/images/images_eng_wholesale_icon_aliexpress.png" alt="popular_image"
+                                class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">$41.70</p>
+                        <a href="https://heltec.org/project/mesh-node-t114/" target="_blank" title="Heltec">
+                            <img src="./assets/images/heltec.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <!-- card 21 -->
+                <div class="popular__card bg-green-700 p-10 pt-20 rounded-md relative">
+                    <img src="./assets/images/seeed-sensecap-indicator.svg" alt="popular_image"
+                        class="max-h-36 absolute -top-3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+                    <p class="!text-white italic">esp32-s3 - Seeed</p>
+                    <h3 class="!text-white text-2xl">Seeed SenseCAP Indicator</h3>
+
+                    <div class="text-green-600 text-xs py-3">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Tokopedia">
+                            <img src="./assets/images/favicon-32.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Shopee">
+                            <img src="./assets/images/icon_favicon_1_32.0Wecxv.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp1321K</p>
+                        <a href="https://www.aliexpress.com/item/1005008379159104.html?" target="_blank"
+                            title="Aliexpress">
+                            <img src="./assets/images/images_eng_wholesale_icon_aliexpress.png" alt="popular_image"
+                                class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">$59.00</p>
+                        <a href="https://www.seeedstudio.com/SenseCAP-Indicator-D1L-p-5646.html" target="_blank"
+                            title="Seeed">
+                            <img src="./assets/images/seeed.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- card 22 -->
+                <div class="popular__card bg-green-700 p-10 pt-20 rounded-md relative">
+                    <img src="./assets/images/tracker-t1000-e.svg" alt="popular_image"
+                        class="max-h-36 absolute -top-3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+                    <p class="!text-white italic">nrf52840 - Seeed</p>
+                    <h3 class="!text-white text-2xl">Seeed Card Tracker T1000-E</h3>
+
+                    <div class="text-green-600 text-xs py-3">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Tokopedia">
+                            <img src="./assets/images/favicon-32.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Shopee">
+                            <img src="./assets/images/icon_favicon_1_32.0Wecxv.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp652K</p>
+                        <a href="https://www.aliexpress.com/item/1005007474293141.html" target="_blank"
+                            title="Aliexpress">
+                            <img src="./assets/images/images_eng_wholesale_icon_aliexpress.png" alt="popular_image"
+                                class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">$39.90</p>
+                        <a href="https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-E-for-Meshtastic-p-5913.html"
+                            target="_blank" title="Seeed">
+                            <img src="./assets/images/seeed.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- card 23 -->
+                <div class="popular__card bg-green-700 p-10 pt-20 rounded-md relative">
+                    <img src="./assets/images/seeed-xiao-s3.svg" alt="popular_image"
+                        class="max-h-36 absolute -top-3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+                    <p class="!text-white italic">esp32-s3 - Seeed</p>
+                    <h3 class="!text-white text-2xl">Seeed Xiao ESP32-S3</h3>
+
+                    <div class="text-green-600 text-xs py-3">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Tokopedia">
+                            <img src="./assets/images/favicon-32.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Shopee">
+                            <img src="./assets/images/icon_favicon_1_32.0Wecxv.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp171K</p>
+                        <a href="https://www.aliexpress.com/item/1005008064764121.html?" target="_blank"
+                            title="Aliexpress">
+                            <img src="./assets/images/images_eng_wholesale_icon_aliexpress.png" alt="popular_image"
+                                class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">$9.90</p>
+                        <a href="https://www.seeedstudio.com/Wio-SX1262-with-XIAO-ESP32S3-p-5982.html" target="_blank"
+                            title="Seeed">
+                            <img src="./assets/images/seeed.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- card 24 -->
+                <div class="popular__card bg-green-700 p-10 pt-20 rounded-md relative">
+                    <img src="./assets/images/rak-wismeshtap.svg" alt="popular_image"
+                        class="max-h-36 absolute -top-3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+                    <p class="!text-white italic">nrf52840 - RAK</p>
+                    <h3 class="!text-white text-2xl">RAK WisMesh Tap</h3>
+
+                    <div class="text-green-600 text-xs py-3">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Tokopedia">
+                            <img src="./assets/images/favicon-32.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Shopee">
+                            <img src="./assets/images/icon_favicon_1_32.0Wecxv.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="https://www.aliexpress.com/item/1005008283318954.html?" target="_blank"
+                            title="Aliexpress">
+                            <img src="./assets/images/images_eng_wholesale_icon_aliexpress.png" alt="popular_image"
+                                class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">$109.00</p>
+                        <a href="https://store.rakwireless.com/products/wismesh-tap" target="_blank" title="RAK Store">
+                            <img src="./assets/images/rak.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <!-- card 25 -->
+                <div class="popular__card bg-green-700 p-10 pt-20 rounded-md relative">
+                    <img src="./assets/images/tlora-v2-1-1_8.svg" alt="popular_image"
+                        class="max-h-36 absolute -top-3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+                    <p class="!text-white italic">esp32 - LilyGo - 2.4GHz</p>
+                    <h3 class="!text-white text-2xl">LILYGO T-LoRa V2.1-1.8</h3>
+
+                    <div class="text-green-600 text-xs py-3">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Tokopedia">
+                            <img src="./assets/images/favicon-32.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Shopee">
+                            <img src="./assets/images/icon_favicon_1_32.0Wecxv.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp170K</p>
+                        <a href="https://www.aliexpress.com/item/10000290160030.html?" target="_blank"
+                            title="Aliexpress">
+                            <img src="./assets/images/images_eng_wholesale_icon_aliexpress.png" alt="popular_image"
+                                class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">$15.60</p>
+                        <a href="https://lilygo.cc/products/lora3" target="_blank" title="Lilygo">
+                            <img src="./assets/images/lilygo.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- card 26 -->
+                <div class="popular__card bg-green-700 p-10 pt-20 rounded-md relative">
+                    <img src="./assets/images/nano-g2-ultra.svg" alt="popular_image"
+                        class="max-h-36 absolute -top-3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+                    <p class="!text-white italic">nrf52840 - B&Q</p>
+                    <h3 class="!text-white text-2xl">Nano G2 Ultra</h3>
+
+                    <div class="text-green-600 text-xs py-3">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Tokopedia">
+                            <img src="./assets/images/favicon-32.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Shopee">
+                            <img src="./assets/images/icon_favicon_1_32.0Wecxv.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Aliexpress">
+                            <img src="./assets/images/images_eng_wholesale_icon_aliexpress.png" alt="popular_image"
+                                class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">$86.00</p>
+                        <a href="https://shop.uniteng.com/product/meshtastic-mesh-device-nano-g2-ultra/" target="_blank"
+                            title="B&Q">
+                            <img src="./assets/images/bbq.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- card 27 -->
+                <div class="popular__card bg-green-700 p-10 pt-20 rounded-md relative">
+                    <img src="./assets/images/rak11310.svg" alt="popular_image"
+                        class="max-h-36 absolute -top-3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+                    <p class="!text-white italic">rp2040 - RAK</p>
+                    <h3 class="!text-white text-2xl">RAK WisBlock 11310</h3>
+
+                    <div class="text-green-600 text-xs py-3">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Tokopedia">
+                            <img src="./assets/images/favicon-32.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Shopee">
+                            <img src="./assets/images/icon_favicon_1_32.0Wecxv.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp201K</p>
+                        <a href="https://www.aliexpress.com/item/1005008012495572.html?" target="_blank"
+                            title="Aliexpress">
+                            <img src="./assets/images/images_eng_wholesale_icon_aliexpress.png" alt="popular_image"
+                                class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">$9.95</p>
+                        <a href="https://store.rakwireless.com/products/rak11310-wisblock-lpwan-module" target="_blank"
+                            title="RAk Store">
+                            <img src="./assets/images/rak.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- card 28 -->
+                <div class="popular__card bg-green-700 p-10 pt-20 rounded-md relative">
+                    <img src="./assets/images/station-g2.svg" alt="popular_image"
+                        class="max-h-36 absolute -top-3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+                    <p class="!text-white italic">esp32-s3 - B&Q</p>
+                    <h3 class="!text-white text-2xl">Station G2</h3>
+
+                    <div class="text-green-600 text-xs py-3">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Tokopedia">
+                            <img src="./assets/images/favicon-32.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Shopee">
+                            <img src="./assets/images/icon_favicon_1_32.0Wecxv.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Aliexpress">
+                            <img src="./assets/images/images_eng_wholesale_icon_aliexpress.png" alt="popular_image"
+                                class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">$109.00</p>
+                        <a href="https://shop.uniteng.com/product/meshtastic-mesh-device-station-edition/"
+                            target="_blank" title="B&Q Shop">
+                            <img src="./assets/images/bbq.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- card 29 -->
+                <div class="popular__card bg-green-700 p-10 pt-20 rounded-md relative">
+                    <img src="./assets/images/lowmesh3.png" alt="popular_image"
+                        class="max-h-36 absolute -top-3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+                    <p class="!text-white italic">nrf52840 - RAK</p>
+                    <h3 class="!text-white text-2xl">LowMesh Pocket-S Portable Solar</h3>
+
+                    <div class="text-green-600 text-xs py-3">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                        <i class="ri-star-line text-gray-200"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Tokopedia">
+                            <img src="./assets/images/favicon-32.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Shopee">
+                            <img src="./assets/images/icon_favicon_1_32.0Wecxv.png" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">Rp0</p>
+                        <a href="#" target="_blank" title="Aliexpress">
+                            <img src="./assets/images/images_eng_wholesale_icon_aliexpress.png" alt="popular_image"
+                                class="w-8 p-1">
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="!text-white text-xl">$99.97</p>
+                        <a href="https://store.rokland.com/products/lowmesh-pocket-s-portable-solar-node-compatible-withmeshtastic-915-mhz"
+                            target="_blank" title="B&Q Shop">
+                            <img src="./assets/images/rak2.webp" alt="popular_image" class="w-8 p-1">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="bg-white">
+            <div class="flex flex-col items-center gap-3 text-center ">
+                <h2 class="">Enhance Your Meshtastic Device: 5 Easy Upgrades</h2>
+                <p class="max-w-2xl">Want to get more out of your Meshtastic device? Here are
+                    five simple upgrades that can significantly boost its capabilities and your
+                    overall experience</p>
+            </div>
+
+
+
+            <!--~~~~~~~~~~~~~~~ Services ~~~~~~~~~~~~~~~-->
+            <div class="bg-white text-green-600 py-20">
+                <div class="container w-full grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+                    <!-- card 1 -->
+                    <div
+                        class="border border-green-600 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                        <div class="flex items-center gap-5">
+                            <i class="ri-git-close-pull-request-line text-3xl md:text-4xl xl:text-5xl"></i>
+                            <p class="md:text-lg font-Lobster">
+                                GPS Module
+                            </p>
+                        </div>
+                        <p class="font-sans">
+                            Adding a GPS module, like the Neo 6m, allows your device to
+                            broadcast its precise location within the mesh network. See how to install
+                            it here: <a type="button" class="font-bold text-blue hover:text-red"
+                                href="https://youtube.com/shorts/qn2Uc7usmP0?feature=share%C2%A02.">GPS Module Install
+                                Video</a>.
+                        </p>
+                    </div>
+
+                    <!-- card 2 -->
+                    <div
+                        class="border border-green-600 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                        <div class="flex items-center gap-5">
+                            <i class="ri-wallet-3-line text-3xl md:text-4xl xl:text-5xl"></i>
+                            <p class="md:text-lg font-Lobster">
+                                BME280 Sensor
+                            </p>
+                        </div>
+                        <p class="font-sans">
+                            This small board enables your device to read and transmit
+                            valuable telemetry data, including temperature, air pressure, and
+                            humidity. Installation is easy: <a
+                                href="https://youtube.com/shorts/DbROvFJs29c?feature=share%C2%A03.">BME280 Install
+                                Video</a>.
+                        </p>
+                    </div>
+
+                    <!-- card 3 -->
+                    <div
+                        class="border border-green-600 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                        <div class="flex items-center gap-5">
+                            <i class="ri-shapes-line text-3xl md:text-4xl xl:text-5xl"></i>
+                            <p class="md:text-lg font-Lobster">
+                                Rotary Encoder
+                            </p>
+                        </div>
+                        <p class="font-sans">
+                            Unlock the power of canned messages! A rotary encoder lets
+                            you quickly send predefined messages directly from your node. Learn more: <a
+                                href="https://youtube.com/shorts/j1viz92gFsU?feature=share%C2%A04.">Canned Messages
+                                Video</a>.
+                        </p>
+                    </div>
+
+                    <!-- card 4 -->
+                    <div
+                        class="border border-green-600 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                        <div class="flex items-center gap-5">
+                            <i class="ri-ruler-line text-3xl md:text-4xl xl:text-5xl"></i>
+                            <p class="md:text-lg font-Lobster">
+                                LED or Buzzer
+                            </p>
+                        </div>
+                        <p class="font-sans">
+                            Don't miss important messages! Adding an LED or buzzer
+                            enables external notifications, alerting you to new incoming
+                            transmissions. Here's how: <a
+                                href="https://youtube.com/shorts/LtTNaQMnwVU?feature=share%C2%A05.">External
+                                Notifications Video</a>.
+                        </p>
+                    </div>
+
+                    <!-- card 4 -->
+                    <div
+                        class="border border-green-600 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                        <div class="flex items-center gap-5">
+                            <i class="ri-ruler-line text-3xl md:text-4xl xl:text-5xl"></i>
+                            <p class="md:text-lg font-Lobster">
+                                Antenna Upgrade
+                            </p>
+                        </div>
+                        <p class="font-sans">
+                            If you're still using the stock antenna, this is the single
+                            most effective upgrade for increasing range. Research different types and
+                            brands to find the perfect fit for your needs. Optimize your range: <a
+                                href="https://youtube.com/shorts/YLvlicm2Y3o?feature=share%C2%A0Please.">Maximize Range
+                                Video</a>.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="flex flex-col items-center gap-3 text-center mb-6">
+                <p class="max-w-2xl">Source: <a href="https://www.youtube.com/shorts/4QdqUcPoWc0">Upgrade your
+                        Meshtastic Node - GPS Notifications Telemetry Canned Messages #meshtastic #comms #tech</a></p>
+                <p class="max-w-2xl">Join our Discord community for more tips and discussions: <a
+                        href="https://discord.gg/q2FEU8zeza"><u>MeshAbout Discord Community</u></a></p>
+                <p class="max-w-2xl">Read the related article on MeshAbout: <a
+                        href="https://meshabout.com/5-easy-upgrades-to-enhance-your-meshtastic-device-experience"
+                        target="_blank"><u>5
+                            Easy Upgrades to Enhance Your Meshtastic Device Experience</u></a></p>
+            </div>
+
+
+
+        </section>
+
+
+        <section class="py-20">
+            
+            <div class=" items-center gap-3 text-center my-6">
+                <h1 class="text-4xl">Apa itu LoRa APRS?</h1>
+            </div>
+
+
+            <div class="container w-full grid grid-cols-1">
+                <p>LoRa APRS adalah kombinasi dari teknologi Long Range (LoRa) dan Automatic Packet Reporting System
+                    (APRS). Secara sederhana, ini adalah sistem komunikasi nirkabel yang memungkinkan perangkat radio
+                    amatir untuk mengirim dan menerima data digital jarak jauh, seperti informasi posisi GPS, cuaca,
+                    pesan teks, dan data lainnya, menggunakan teknologi LoRa.</p>
+
+            </div>
+
+
+
+            <div class="container w-full grid grid-cols-1">
+
+            <div class="flex flex-col items-center gap-1 text-center my-6">
+                <h2 class="!font-extrabold !text-left text-lg">Fungsi dan Manfaat LoRa APRS</h2>
+            </div>
+
+                <ol class="list-disc">
+                    <li>
+                        <p><strong>Pelacakan Posisi:</strong> LoRa APRS memungkinkan pengguna untuk melacak posisi
+                            perangkat atau kendaraan yang dilengkapi dengan GPS secara <em>real-time</em>. Informasi ini
+                            sangat berguna dalam kegiatan <em>outdoor</em>, ekspedisi, atau situasi darurat.</p>
+                    </li>
+                    <li>
+                        <p><strong>Pertukaran Informasi:</strong> Pengguna dapat saling bertukar pesan teks singkat,
+                            informasi cuaca, atau data lainnya melalui jaringan LoRa APRS. Hal ini memungkinkan
+                            komunikasi yang efisien dalam situasi di mana jaringan seluler tidak tersedia.</p>
+                    </li>
+                    <li>
+                        <p><strong>Pemantauan Lingkungan:</strong> LoRa APRS dapat digunakan untuk mengumpulkan dan
+                            mengirimkan data dari sensor lingkungan, seperti suhu, kelembaban, atau kualitas udara.
+                            Informasi ini berguna dalam pemantauan lingkungan atau penelitian ilmiah.</p>
+                    </li>
+                    <li>
+                        <p><strong>Komunikasi Darurat:</strong> Dalam situasi darurat, ketika jaringan komunikasi
+                            konvensional tidak berfungsi, LoRa APRS dapat menjadi alternatif untuk berkomunikasi dan
+                            memberikan informasi penting.</p>
+                    </li>
+                </ol>
+            </div>
+
+
+
+            <div class="container w-full grid grid-cols-1">
+
+            <div class="flex flex-col items-center gap-1 text-center my-6">
+                <h2 class="!font-extrabold !text-left text-lg">Keunggulan LoRa APRS</h2>
+            </div>
+
+            <ol class="list-disc">
+                <li>
+                        <p><strong>Jangkauan Jauh:</strong> Teknologi LoRa memungkinkan komunikasi jarak jauh dengan
+                            konsumsi daya yang rendah. Jangkauan LoRa APRS bisa mencapai puluhan kilometer, tergantung
+                            pada kondisi lingkungan.</p>
+                    </li>
+                    <li>
+                        <p><strong>Daya Rendah:</strong> Perangkat LoRa APRS dirancang untuk hemat energi, sehingga
+                            dapat beroperasi dalam waktu yang lama dengan baterai.</p>
+                    </li>
+                    <li>
+                        <p><strong>Desentralisasi:</strong> Jaringan LoRa APRS tidak bergantung pada infrastruktur
+                            pusat. Setiap perangkat dapat berfungsi sebagai <em>repeater</em> untuk memperluas jangkauan
+                            jaringan.</p>
+                    </li>
+                    <li>
+                        <p><strong>Fleksibilitas:</strong> LoRa APRS dapat diintegrasikan dengan berbagai perangkat dan
+                            sensor, sehingga memungkinkan berbagai aplikasi yang berbeda.</p>
+                    </li>
+                </ol>
+            </div>
+
+
+
+            <div class="container w-full grid grid-cols-1">
+
+            <div class="flex flex-col items-center gap-1 text-center my-6">
+                <h2 class="!font-extrabold !text-left text-lg">Contoh Penggunaan LoRa APRS</h2>
+            </div>
+
+            <ul class="list-decimal">
+                <li><strong>Ekspedisi Gunung:</strong> Tim ekspedisi dapat menggunakan LoRa APRS untuk melacak
+                        posisi anggota tim, berbagi informasi cuaca, dan berkomunikasi dalam situasi darurat.</li>
+                    <li><strong>SAR (Search and Rescue):</strong> Tim SAR dapat menggunakan LoRa APRS untuk melacak
+                        korban atau personel yang terlibat dalam operasi pencarian dan penyelamatan.</li>
+                    <li><strong>Pemantauan Lingkungan:</strong> Peneliti dapat menggunakan LoRa APRS untuk mengumpulkan
+                        data dari sensor lingkungan di daerah terpencil.</li>
+                </ul>
+            </div>
+
+
+
+            <div class="container w-full grid grid-cols-1">
+
+            <div class="flex flex-col items-center gap-1 text-center my-6">
+                <h2 class="!font-extrabold !text-left text-lg">Kesimpulan</h2>
+            </div>
+
+                <p>LoRa APRS adalah teknologi yang sangat berguna untuk komunikasi jarak jauh dan pengumpulan data dalam
+                    berbagai situasi. Dengan jangkauan yang luas, konsumsi daya rendah, dan fleksibilitasnya, LoRa APRS
+                    memiliki potensi besar untuk berbagai aplikasi, dari kegiatan <em>outdoor</em> hingga situasi
+                    darurat dan pemantauan lingkungan.</p>
+            </div>
+
+
+
+            <div class="container grid grid-cols-1 my-6">
+
+                <p>LoRa APRS on the LILYGO T-Deck Plus ( <a href="https://youtu.be/kmZaQo5-agU?si=iSRKlEJF9-z9nAK0"
+                        target="_blank">Youtube Link</a> )
+                </p>
+                <p>CA2RXU LoRa APRS Tracker/Station in <a
+                        href="https://github.com/richonguzman/LoRa_APRS_Tracker">https://github.com/richonguzman/LoRa_APRS_Tracker</a>
+                    and LORA tracker web flasher in <a
+                        href="https://richonguzman.github.io/lora-tracker-web-flasher/installer.html">https://richonguzman.github.io/lora-tracker-web-flasher/installer.html</a>
+                </p>
+            </div>
+        </section>
+
+
+    </main>
+
+
+    <!--~~~~~~~~~~~~~~~ External Footer ~~~~~~~~~~~~~~~-->
+    <div id="footer-placeholder"></div>
+
+    <!--~~~~~~~~~~~~~~~ Scroll Up ~~~~~~~~~~~~~~~-->
+    <a href="#"
+        class="fixed right-4 -bottom-1/2 bg-green-600 shadow-sm inline-block px-3 py-1 md:px-4 md:py-2 rounded-md text-lg z-50 hover:-translate-y-1 duration-300"
+        id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--~~~~~~~~~~~~~~~ Swiper JS ~~~~~~~~~~~~~~~-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--~~~~~~~~~~ SCROLLREVEAL ~~~~~~~~~~-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--~~~~~~~~~~ mainjs ~~~~~~~~~~-->
+    <script src="main.js"></script>
+
+</body>
+
+</html>

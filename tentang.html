@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--~~~~~~~~~~~~~~~ Favicon ~~~~~~~~~~~~~~~-->
+    <link rel="shortcut icon" href="https://meshtastic.org/design/web/favicon.ico" type="image/x-icon">
+
+    <!--~~~~~~~~~~~~~~~ Remix Icon ~~~~~~~~~~~~~~~-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+
+    <!--~~~~~~~~~~~~~~~ Swiper's CSS ~~~~~~~~~~~~~~~-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./output.css">
+    <title>IndoMesh || Meshtastic Indonesia || meshtastic.my.id </title>
+</head>
+
+<body>
+    <!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
+    <header id="navbar" class="bg-green-400/80 fixed w-full top-0 left-0 z-50">
+        <nav class="container flex items-center justify-between h-16 sm:h-20">
+            <div class="font-Lobster text-3xl md:text-3xl sm:text-2xl">
+                <i class="text-green-700 ri-base-station-line"></i>
+                IndoMesh
+            </div>
+
+            <div id="nav-menu"
+                class="absolute top-0 left-[-100%] min-h-[80vh] w-full bg-green-400/80 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto">
+                <ul class="flex flex-col items-center gap-8 lg:flex-row">
+                    <li>
+                        <a href="/" class="nav-link shadow-md">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#tentang" class="nav-link active">Pelajari</a>
+                    </li>
+
+                    <li>
+                        <a href="pelajari.html" class="nav-link">Alat</a>
+                    </li>
+
+                    <li>
+                        <a href="review.html" class="nav-link">Review</a>
+                    </li>
+                </ul>
+                <!-- https://remixicon.com/ -->
+                <div class="absolute bottom-0 -right-10 opacity-90 lg:hidden">
+                    <img src="assets/images/mesh-2.png" alt="leaf_image" class="w-32">
+                </div>
+
+                <div class="absolute -top-5 -left-5 rotate-90 opacity-90 lg:hidden">
+                    <img src="assets/images/mesh-1.png" alt="leaf_image" class="w-32">
+                </div>
+            </div>
+
+            <div class="text-xl sm:text-3xl cursor-pointer z-50 lg:hidden">
+                <i class="ri-menu-4-line" id="hamburger"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+
+        <!--~~~~~~~~~~~~~~~ About us ~~~~~~~~~~~~~~~-->
+        <section id="tentang" class="relative overflow-hidden">
+            <div class="about__leaf absolute -top-8 -right-12 opacity-50">
+                <img src="assets/images/mesh-3.png" alt="leaf_image" class="w-40 md:w-52 xl:w-64">
+            </div>
+
+            <div class="about__top flex flex-col items-center gap-3 text-center mb-10 md:mb-20">
+                <h2 class="title !text-white">Pelajari</h2>
+                <p class="max-w-2xl">Follow instruction for more</p>
+            </div>
+
+            <div class="container space-y-10 xl:space-y-0">
+                <!-- item 1 -->
+                <div class="flex flex-col items-center lg:flex-row gap-5">
+                    <!-- image -->
+                    <div class="about__item__1-img w-full lg:w-1/2">
+                        <img src="assets/images/mesh-1.png" alt="about_image"
+                            class="w-full sm:w-2/3 lg:w-full xl:w-2/3 mx-auto">
+                    </div>
+
+                    <!-- content -->
+                    <div class="about__item__1-content w-full lg:w-1/2">
+                        <div class="space-y-5">
+                            <h3>
+                                <span class="text-green-600">Desentralisasi</span> <br>
+                                
+                            </h3>
+                            <p class="text-white text-xl">
+                                Jaringan Meshtastic tidak bergantung pada satu titik pusat jaringan, sehingga lebih tahan terhadap gangguan atau kerusakan. Jika satu perangkat tidak berfungsi, perangkat lain dalam jaringan masih dapat berkomunikasi satu sama lain.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- item 2 -->
+                <div class="flex flex-col items-center lg:flex-row-reverse gap-5">
+                    <!-- image -->
+                    <div class="about__item__2-img w-1/2 lg:w-1/4">
+                        <img src="assets/images/t-deck.svg" alt="about_image"
+                            class="w-full sm:w-2/3 lg:w-full xl:w-2/3 mx-auto">
+                    </div>
+
+                    <!-- content -->
+                    <div class="about__item__2-content w-full lg:w-1/2">
+                        <div class="space-y-5">
+                            <h3>
+                                <span class="text-green-600">Keterjangkauan</span> <br>
+                                
+                            </h3>
+                            <p class="text-white text-xl">
+                                Perangkat Meshtastic umumnya lebih terjangkau daripada solusi komunikasi jarak jauh lainnya, menjadikannya pilihan yang ekonomis bagi individu, kelompok, atau organisasi yang membutuhkan komunikasi yang andal di daerah terpencil.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- item 1 -->
+                <div class="flex flex-col items-center lg:flex-row gap-5">
+                    <!-- image -->
+                    <div class="about__item__1-img w-1/2 lg:w-1/4">
+                        <img src="assets/images/cap.png" alt="about_image"
+                            class="w-full sm:w-2/3 lg:w-full xl:w-2/3 mx-auto">
+                    </div>
+
+                    <!-- content -->
+                    <div class="about__item__1-content w-full lg:w-1/2">
+                        <div class="space-y-5">
+                            <h3>
+                                <span class="text-green-600">Fleksibilitas</span> <br>
+                                
+                            </h3>
+                            <p class="text-white text-xl">
+                                Meshtastic dapat digunakan dalam berbagai situasi dan kondisi, mulai dari kegiatan rekreasi di alam terbuka, tanggap darurat bencana, hingga komunikasi di wilayah pedesaan yang belum memiliki infrastruktur jaringan yang memadai.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- item 2 -->
+                <div class="flex flex-col items-center lg:flex-row-reverse gap-5">
+                    <!-- image -->
+                    <div class="about__item__2-img w-1/2 lg:w-1/4">
+                        <img src="assets/images/h1.png" alt="about_image"
+                            class="w-full sm:w-2/3 lg:w-full xl:w-2/3 mx-auto">
+                    </div>
+
+                    <!-- content -->
+                    <div class="about__item__2-content w-full lg:w-1/2">
+                        <div class="space-y-5">
+                            <h3>
+                                <span class="text-green-600">Regionalitas</span> <br>
+                                
+                            </h3>
+                            <p class="text-white text-xl">
+                                Dengan teknologi LoRa yang digunakan oleh Meshtastic akan memungkinkan terjadinya komunikasi jarak jauh pada setiap region, bahkan pada kondisi di daerah yang sulit dijangkau oleh sinyal seluler atau internet.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <!--~~~~~~~~~~~~~~~ External Footer ~~~~~~~~~~~~~~~-->
+    <div id="footer-placeholder"></div>
+
+
+    <!--~~~~~~~~~~~~~~~ Scroll Up ~~~~~~~~~~~~~~~-->
+    <a href="#"
+        class="fixed right-4 -bottom-1/2 bg-green-600 shadow-sm inline-block px-3 py-1 md:px-4 md:py-2 rounded-md text-lg z-50 hover:-translate-y-1 duration-300"
+        id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--~~~~~~~~~~~~~~~ Swiper JS ~~~~~~~~~~~~~~~-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--~~~~~~~~~~ SCROLLREVEAL ~~~~~~~~~~-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--~~~~~~~~~~ mainjs ~~~~~~~~~~-->
+    <script src="main.js"></script>
+
+</body>
+
+</html>
