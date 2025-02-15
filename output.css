@@ -1297,6 +1297,16 @@ video {
   color: rgb(239 68 68 / var(--tw-text-opacity, 1)) !important;
 }
 
+.\!text-green-400{
+  --tw-text-opacity: 1 !important;
+  color: rgb(74 222 128 / var(--tw-text-opacity, 1)) !important;
+}
+
+.\!text-green-600{
+  --tw-text-opacity: 1 !important;
+  color: rgb(22 163 74 / var(--tw-text-opacity, 1)) !important;
+}
+
 .opacity-20{
   opacity: 0.2;
 }
@@ -1537,6 +1547,11 @@ h3{
 .hover\:text-green-600:hover{
   --tw-text-opacity: 1;
   color: rgb(22 163 74 / var(--tw-text-opacity, 1));
+}
+
+.hover\:\!text-red-500:hover{
+  --tw-text-opacity: 1 !important;
+  color: rgb(239 68 68 / var(--tw-text-opacity, 1)) !important;
 }
 
 .hover\:shadow-2xl:hover{
