@@ -1,0 +1,450 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--~~~~~~~~~~~~~~~ Favicon ~~~~~~~~~~~~~~~-->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+    <!--~~~~~~~~~~~~~~~ Remix Icon ~~~~~~~~~~~~~~~-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+
+    <!--~~~~~~~~~~~~~~~ Swiper's CSS ~~~~~~~~~~~~~~~-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./output.css">
+    <title>IndoMesh || Meshtastic Indonesia || meshtastic.my.id </title>
+</head>
+
+<body>
+    <!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
+    <header id="navbar" class="bg-green-400/80 fixed w-full top-0 left-0 z-50">
+        <nav class="container flex items-center justify-between h-16 sm:h-20">
+            <div class="font-Lobster text-3xl md:text-3xl sm:text-2xl"><i
+                    class="text-green-700 ri-base-station-line"></i> IndoMesh</div>
+
+            <div id="nav-menu"
+                class="absolute top-0 left-[-100%] min-h-[80vh] w-full bg-green-400/80 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto">
+                <ul class="flex flex-col items-center gap-8 lg:flex-row">
+                    <li>
+                        <a href="/" class="nav-link active">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="tentang.html" class="nav-link">Tentang</a>
+                    </li>
+
+                    <li>
+                        <a href="pelajari.html" class="nav-link">Pelajari</a>
+                    </li>
+
+                    <li>
+                        <a href="review.html" class="nav-link">Ulasan</a>
+                    </li>
+                </ul>
+                <!-- https://remixicon.com/ -->
+                <div class="absolute bottom-0 -right-10 opacity-90 lg:hidden">
+                    <img src="assets/img/leaf-1.png" alt="leaf_image" class="w-32">
+                </div>
+
+                <div class="absolute -top-5 -left-5 rotate-90 opacity-90 lg:hidden">
+                    <img src="assets/img/leaf-2.png" alt="leaf_image" class="w-32">
+                </div>
+            </div>
+
+            <div class="text-xl sm:text-3xl cursor-pointer z-50 lg:hidden">
+                <i class="ri-menu-4-line" id="hamburger"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--~~~~~~~~~~~~~~~ Home ~~~~~~~~~~~~~~~-->
+        <section id="home" class="relative">
+            <div class="container">
+
+
+                    <table class="table-auto border-collapse w-full">
+                        <tbody>
+                            <tr>
+                                <td colspan="2" class="text-center text-2xl">
+                                    <p><strong>DIY and Community Devices</strong></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="text-center text-xl">
+                                    <p><strong>&nbsp;</strong></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="bg-green-600 border-2 border-green-600 text-center text-xl">
+                                    <p><strong>RP2040 LoRa</strong></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border-2 border-green-600 text-center">
+                                    <p>rp2040</p>
+                                </td>
+                                <td class="border-2 border-green-600 text-center">
+                                    <p>Waveshare</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="text-center text-xl">
+                                    <p>&nbsp;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="bg-green-600 border-2 border-green-600 text-center text-xl">
+                                    <p><strong>RadioMaster 900 Bandit Nano</strong></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border-2 border-green-600 text-center">
+                                    <p>esp32</p>
+                                </td>
+                                <td class="border-2 border-green-600 text-center">
+                                    <p>RadioMaster</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="text-center text-xl">
+                                    <p>&nbsp;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="bg-green-600 border-2 border-green-600 text-center text-xl">
+                                    <p><strong>Nano G1</strong></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border-2 border-green-600 text-center">
+                                    <p>esp32</p>
+                                </td>
+                                <td class="border-2 border-green-600 text-center">
+                                    <p>B&amp;Q</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="text-center text-xl">
+                                    <p>&nbsp;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="bg-green-600 border-2 border-green-600 text-center text-xl">
+                                    <p><strong>Nano G1 Explorer</strong></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border-2 border-green-600 text-center">
+                                    <p>esp32</p>
+                                </td>
+                                <td class="border-2 border-green-600 text-center">
+                                    <p>B&amp;Q</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="text-center text-xl">
+                                    <p>&nbsp;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="bg-green-600 border-2 border-green-600 text-center text-xl">
+                                    <p><strong>Station G1</strong></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border-2 border-green-600 text-center">
+                                    <p>esp32</p>
+                                </td>
+                                <td class="border-2 border-green-600 text-center">
+                                    <p>B&amp;Q</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="text-center text-xl">
+                                    <p>&nbsp;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="bg-green-600 border-2 border-green-600 text-center text-xl">
+                                    <p><strong>Canary One</strong></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border-2 border-green-600 text-center">
+                                    <p>nrf52840</p>
+                                </td>
+                                <td class="border-2 border-green-600 text-center">
+                                    <p>Canary</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="text-center text-xl">
+                                    <p>&nbsp;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="bg-green-600 border-2 border-green-600 text-center text-xl">
+                                    <p><strong>DIY V1</strong></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border-2 border-green-600 text-center">
+                                    <p>esp32</p>
+                                </td>
+                                <td class="border-2 border-green-600 text-center">
+                                    <p>DIY</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="text-center text-xl">
+                                    <p>&nbsp;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="bg-green-600 border-2 border-green-600 text-center text-xl">
+                                    <p><strong>Hydra</strong></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border-2 border-green-600 text-center">
+                                    <p>esp32</p>
+                                </td>
+                                <td class="border-2 border-green-600 text-center">
+                                    <p>DIY</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="text-center text-xl">
+                                    <p>&nbsp;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="bg-green-600 border-2 border-green-600 text-center text-xl">
+                                    <p><strong>M5 Stack</strong></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border-2 border-green-600 text-center">
+                                    <p>esp32</p>
+                                </td>
+                                <td class="border-2 border-green-600 text-center">
+                                    <p>M5Stack</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="text-center text-xl">
+                                    <p>&nbsp;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="bg-green-600 border-2 border-green-600 text-center text-xl">
+                                    <p><strong>Raspberry Pi Pico</strong></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border-2 border-green-600 text-center">
+                                    <p>rp2040RPi</p>
+                                </td>
+                                <td class="border-2 border-green-600 text-center">
+                                    <p>DIY</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="text-center text-xl">
+                                    <p>&nbsp;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="bg-green-600 border-2 border-green-600 text-center text-xl">
+                                    <p><strong>Raspberry Pi Pico W</strong></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border-2 border-green-600 text-center">
+                                    <p>rp2040RPi</p>
+                                </td>
+                                <td class="border-2 border-green-600 text-center">
+                                    <p>DIY</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="text-center text-xl">
+                                    <p>&nbsp;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="bg-green-600 border-2 border-green-600 text-center text-xl">
+                                    <p><strong>Pi Computer S3</strong></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border-2 border-green-600 text-center">
+                                    <p>esp32-s3</p>
+                                </td>
+                                <td class="border-2 border-green-600 text-center">
+                                    <p>&nbsp;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="text-center text-xl">
+                                    <p>&nbsp;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="bg-green-600 border-2 border-green-600 text-center text-xl">
+                                    <p><strong>unPhone</strong></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border-2 border-green-600 text-center">
+                                    <p>esp32-s3</p>
+                                </td>
+                                <td class="border-2 border-green-600 text-center">
+                                    <p>&nbsp;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="text-center text-xl">
+                                    <p>&nbsp;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="bg-green-600 border-2 border-green-600 text-center text-xl">
+                                    <p><strong>EBYTE EoRa-S3</strong></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border-2 border-green-600 text-center">
+                                    <p>esp32-s3</p>
+                                </td>
+                                <td class="border-2 border-green-600 text-center">
+                                    <p>EByte</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="text-center text-xl">
+                                    <p>&nbsp;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="bg-green-600 border-2 border-green-600 text-center text-xl">
+                                    <p><strong>NRF52 Pro-micro DIY</strong></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border-2 border-green-600 text-center">
+                                    <p>nrf52840</p>
+                                </td>
+                                <td class="border-2 border-green-600 text-center">
+                                    <p>DIY</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+
+                
+            </div>
+        </section>
+
+        <!--~~~~~~~~~~~~~~~ Services ~~~~~~~~~~~~~~~-->
+        <div class="hidden bg-white text-green-600 py-20">
+            <div class="container w-full grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <!-- card 1 -->
+                <div
+                    class="service__card border border-green-600 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                    <div class="flex items-center gap-5">
+                        <i class="ri-git-close-pull-request-line text-3xl md:text-4xl xl:text-5xl"></i>
+                        <p class="md:text-lg font-Lobster">
+                            Desentralisasi
+                        </p>
+                    </div>
+                    <p class="font-sans">
+                        Jaringan Meshtastic tidak bergantung pada satu titik pusat, sehingga lebih tahan terhadap
+                        gangguan atau kerusakan. Jika satu perangkat tidak berfungsi, perangkat lain dalam jaringan
+                        masih dapat berkomunikasi satu sama lain.
+                    </p>
+                </div>
+
+                <!-- card 2 -->
+                <div
+                    class="service__card border border-green-600 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                    <div class="flex items-center gap-5">
+                        <i class="ri-wallet-3-line text-3xl md:text-4xl xl:text-5xl"></i>
+                        <p class="md:text-lg font-Lobster">
+                            Keterjangkauan
+                        </p>
+                    </div>
+                    <p class="font-sans">
+                        Perangkat Meshtastic umumnya lebih terjangkau daripada solusi komunikasi jarak jauh lainnya,
+                        menjadikannya pilihan yang ekonomis bagi individu, kelompok, atau organisasi yang membutuhkan
+                        komunikasi yang andal di daerah terpencil.
+                    </p>
+                </div>
+
+                <!-- card 3 -->
+                <div
+                    class="service__card border border-green-600 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                    <div class="flex items-center gap-5">
+                        <i class="ri-shapes-line text-3xl md:text-4xl xl:text-5xl"></i>
+                        <p class="md:text-lg font-Lobster">
+                            Fleksibilitas
+                        </p>
+                    </div>
+                    <p class="font-sans">
+                        Meshtastic dapat digunakan dalam berbagai situasi dan kondisi, mulai dari kegiatan rekreasi di
+                        alam terbuka, tanggap darurat bencana, hingga komunikasi di wilayah pedesaan yang belum memiliki
+                        infrastruktur jaringan yang memadai.
+                    </p>
+                </div>
+
+                <!-- card 4 -->
+                <div
+                    class="service__card border border-green-600 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                    <div class="flex items-center gap-5">
+                        <i class="ri-ruler-line text-3xl md:text-4xl xl:text-5xl"></i>
+                        <p class="md:text-lg font-Lobster">
+                            Regional
+                        </p>
+                    </div>
+                    <p class="font-sans">
+                        Dengan teknologi LoRa yang digunakan oleh Meshtastic akan memungkinkan terjadinya komunikasi
+                        jarak jauh, bahkan pada kondisi di daerah yang sulit dijangkau oleh sinyal seluler atau
+                        internet.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <!--~~~~~~~~~~~~~~~ External Footer ~~~~~~~~~~~~~~~-->
+    <div id="footer-placeholder"></div>
+
+
+    <!--~~~~~~~~~~~~~~~ Scroll Up ~~~~~~~~~~~~~~~-->
+    <a href="#"
+        class="fixed right-4 -bottom-1/2 bg-green-600 shadow-sm inline-block px-3 py-1 md:px-4 md:py-2 rounded-md text-lg z-50 hover:-translate-y-1 duration-300"
+        id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--~~~~~~~~~~~~~~~ Swiper JS ~~~~~~~~~~~~~~~-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--~~~~~~~~~~ SCROLLREVEAL ~~~~~~~~~~-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--~~~~~~~~~~ mainjs ~~~~~~~~~~-->
+    <script src="main.js"></script>
+
+</body>
+
+</html>
