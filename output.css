@@ -704,6 +704,11 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.my-5{
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -726,10 +731,6 @@ video {
 
 .ml-2{
   margin-left: 0.5rem;
-}
-
-.ml-6{
-  margin-left: 1.5rem;
 }
 
 .ml-auto{
@@ -756,8 +757,12 @@ video {
   margin-top: 2rem;
 }
 
-.ml-4{
-  margin-left: 1rem;
+.ml-5{
+  margin-left: 1.25rem;
+}
+
+.ml-6{
+  margin-left: 1.5rem;
 }
 
 .inline-block{
@@ -1144,11 +1149,6 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.py-10{
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
 .pb-10{
   padding-bottom: 2.5rem;
 }
@@ -1234,10 +1234,6 @@ video {
   font-weight: 600;
 }
 
-.\!font-bold{
-  font-weight: 700 !important;
-}
-
 .uppercase{
   text-transform: uppercase;
 }
@@ -1291,11 +1287,6 @@ video {
   color: rgb(220 38 38 / var(--tw-text-opacity, 1));
 }
 
-.\!text-blue-600{
-  --tw-text-opacity: 1 !important;
-  color: rgb(37 99 235 / var(--tw-text-opacity, 1)) !important;
-}
-
 .text-red-500{
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity, 1));
@@ -1304,11 +1295,6 @@ video {
 .\!text-red-500{
   --tw-text-opacity: 1 !important;
   color: rgb(239 68 68 / var(--tw-text-opacity, 1)) !important;
-}
-
-.text-green-400{
-  --tw-text-opacity: 1;
-  color: rgb(74 222 128 / var(--tw-text-opacity, 1));
 }
 
 .\!text-green-400{
@@ -1561,11 +1547,6 @@ h3{
 .hover\:text-green-600:hover{
   --tw-text-opacity: 1;
   color: rgb(22 163 74 / var(--tw-text-opacity, 1));
-}
-
-.hover\:text-red-500:hover{
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity, 1));
 }
 
 .hover\:\!text-red-500:hover{
