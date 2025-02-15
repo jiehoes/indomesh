@@ -704,6 +704,11 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.my-5{
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -728,10 +733,6 @@ video {
   margin-left: 0.5rem;
 }
 
-.ml-6{
-  margin-left: 1.5rem;
-}
-
 .ml-auto{
   margin-left: auto;
 }
@@ -754,6 +755,14 @@ video {
 
 .mt-8{
   margin-top: 2rem;
+}
+
+.ml-5{
+  margin-left: 1.25rem;
+}
+
+.ml-6{
+  margin-left: 1.5rem;
 }
 
 .inline-block{
@@ -1135,6 +1144,11 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .pb-10{
   padding-bottom: 2.5rem;
 }
@@ -1153,6 +1167,10 @@ video {
 
 .font-Lobster{
   font-family: Lobster, sans-serif;
+}
+
+.font-Jost{
+  font-family: Jost, sans-serif;
 }
 
 .text-2xl{
@@ -1257,6 +1275,26 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.\!text-red-600{
+  --tw-text-opacity: 1 !important;
+  color: rgb(220 38 38 / var(--tw-text-opacity, 1)) !important;
+}
+
+.text-red-600{
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity, 1));
+}
+
+.text-red-500{
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity, 1));
+}
+
+.\!text-red-500{
+  --tw-text-opacity: 1 !important;
+  color: rgb(239 68 68 / var(--tw-text-opacity, 1)) !important;
 }
 
 .opacity-20{
