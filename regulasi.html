@@ -1,0 +1,520 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--~~~~~~~~~~~~~~~ Favicon ~~~~~~~~~~~~~~~-->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+    <!--~~~~~~~~~~~~~~~ Remix Icon ~~~~~~~~~~~~~~~-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+
+    <!--~~~~~~~~~~~~~~~ Swiper's CSS ~~~~~~~~~~~~~~~-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./output.css">
+    <title>IndoMesh || Meshtastic Indonesia || meshtastic.my.id </title>
+</head>
+
+<body>
+    <!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
+    <header id="navbar" class="bg-green-400/80 fixed w-full top-0 left-0 z-50">
+        <nav class="container flex items-center justify-between h-16 sm:h-20">
+            <div class="font-Lobster text-3xl md:text-3xl sm:text-2xl"><i
+                    class="text-green-700 ri-base-station-line"></i> IndoMesh</div>
+
+            <div id="nav-menu"
+                class="absolute top-0 left-[-100%] min-h-[80vh] w-full bg-green-400/80 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto">
+                <ul class="flex flex-col items-center gap-8 lg:flex-row">
+                    <li>
+                        <a href="/" class="nav-link">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="tentang.html" class="nav-link">Tentang</a>
+                    </li>
+
+                    <li>
+                        <a href="pelajari.html" class="nav-link">Pelajari</a>
+                    </li>
+
+                    <li>
+                        <a href="regulasi.html" class="nav-link active">Regulasi</a>
+                    </li>
+                </ul>
+                <!-- https://remixicon.com/ -->
+                <div class="absolute bottom-0 -right-10 opacity-90 lg:hidden">
+                    <img src="assets/img/leaf-1.png" alt="leaf_image" class="w-32">
+                </div>
+
+                <div class="absolute -top-5 -left-5 rotate-90 opacity-90 lg:hidden">
+                    <img src="assets/img/leaf-2.png" alt="leaf_image" class="w-32">
+                </div>
+            </div>
+
+            <div class="text-xl sm:text-3xl cursor-pointer z-50 lg:hidden">
+                <i class="ri-menu-4-line" id="hamburger"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--~~~~~~~~~~~~~~~ Home ~~~~~~~~~~~~~~~-->
+        <section id="home" class="relative">
+            <div class="container">
+
+                <div class=" items-center gap-3 text-center my-6">
+                    <h1 class="text-3xl">Regulasi Teknologi Meshtastic pada Frekuensi LPWA oleh Komunitas Penghobi IoT di
+                        Indonesia</h1>
+                </div>
+    
+                <div class="container w-full grid grid-cols-1">
+                    <div class="flex flex-col items-center gap-1 text-center my-6">
+                        <h2 class="!font-extrabold !text-left text-xl">1. Pengenalan Teknologi Meshtastic dan LPWA</h2>
+                    </div>
+                </div>
+    
+
+                <p class="py-2"><strong>Meshtastic</strong> adalah platform komunikasi data berbasis LoRa (Long Range) yang bersifat
+                    <em>open source</em>. Platform ini memungkinkan perangkat-perangkat yang kompatibel, seperti
+                    <em>smartphone</em> dan <em>microcontroller</em>, untuk membentuk jaringan <em>mesh</em> dan saling
+                    bertukar pesan, lokasi GPS, dan data sensor secara <em>real-time</em>. Dengan menggunakan modulasi
+                    LoRa, Meshtastic dapat mencapai jarak komunikasi yang jauh, hingga puluhan kilometer, dengan
+                    konsumsi daya yang rendah.<a href="#_ftn1"><sup>[1]</sup></a></p>
+                <p class="py-2"><strong>LPWA (Low-Power Wide-Area Network)</strong> adalah jenis jaringan nirkabel yang dirancang
+                    untuk perangkat IoT (Internet of Things) yang membutuhkan komunikasi jarak jauh dengan konsumsi daya
+                    rendah.<a href="#_ftn2"><sup>[2]</sup></a> LPWA menggunakan berbagai teknologi, termasuk LoRaWAN, NB-IoT, dan
+                    Sigfox, untuk mengirimkan data dalam jumlah kecil dengan efisiensi energi yang tinggi.<a
+                        href="#_ftn2"><sup>[2]</sup></a></p>
+                <p class="py-2">Di Indonesia, frekuensi yang diizinkan untuk penggunaan LPWA non-seluler adalah 920-923 MHz, sesuai
+                    dengan Peraturan Direktur Jenderal Sumber Daya dan Perangkat Pos dan Informatika Nomor 3 Tahun
+                    2019.<a href="#_ftn8"><sup>[8]</sup></a></p>
+
+
+
+
+
+                <div class="container w-full grid grid-cols-1">
+                    <div class="flex flex-col items-center gap-1 text-center my-6">
+                        <h2 class="!font-extrabold !text-left text-xl">2. Potensi Produk-Produk di Pasaran</h2>
+                    </div>
+                </div>
+
+
+
+
+                <p class="py-2">Beberapa produk yang populer di kalangan komunitas Meshtastic di Indonesia antara lain:</p>
+                <ul class="ml-6 list-decimal">
+                    <li><strong>Heltec:</strong> Dikenal dengan modul LoRa yang terintegrasi dengan mikrokontroler
+                        ESP32, seperti Heltec WiFi LoRa 32 V3, yang cocok untuk pengembangan prototipe cepat.<a
+                            href="#_ftn3"><sup>[3]</sup></a></li>
+                    <li><strong>RAK Wireless:</strong> Menyediakan modul LoRa (misalnya, RAK4631) dan gateway (misalnya,
+                        RAK7249) yang mudah diintegrasikan dengan berbagai platform IoT.<a href="#_ftn3"><sup>[4]</sup></a></li>
+                    <li><strong>Lilygo (T-Beam):</strong> Produk ini dilengkapi dengan GPS dan LoRa, ideal untuk
+                        aplikasi pelacakan dan komunikasi jarak jauh.<a href="#_ftn5"><sup>[5]</sup></a></li>
+                    <li><strong>Seeed Studio:</strong> Menyediakan berbagai modul LoRa, seperti Seeed Wio-E5, dan
+                        perangkat IoT lainnya dengan harga terjangkau.<a href="#_ftn6"><sup>[6]</sup></a></li>
+                    <li><strong>B&amp;Q:</strong> Menawarkan perangkat LoRa dengan fitur lengkap untuk aplikasi
+                        industri, seperti B&amp;Q QM5200.</li>
+                    <li><strong>Raspberry Pi:</strong> Dapat diintegrasikan dengan modul LoRa, seperti Dragino LoRa GPS
+                        HAT, untuk membuat gateway atau node IoT yang fleksibel.<a href="#_ftn7"><sup>[7]</sup></a></li>
+                    <li><strong>Canary:</strong> Perangkat LoRa yang dirancang untuk aplikasi keamanan dan pemantauan,
+                        seperti Canary LoRaWAN Door Sensor.</li>
+                </ul>
+                <p class="py-2">Produk-produk ini memungkinkan komunitas penghobi untuk bereksperimen dan mengembangkan solusi
+                    komunikasi yang sesuai dengan kebutuhan lokal, sambil mematuhi regulasi frekuensi LPWA di Indonesia.
+                </p>
+
+
+                <div class="container w-full grid grid-cols-1">
+                    <div class="flex flex-col items-center gap-1 text-center my-6">
+                        <h2 class="!font-extrabold !text-left text-xl">3. Kesesuaian dengan Regulasi Frekuensi LPWA di Indonesia</h2>
+                    </div>
+                </div>
+
+
+                <p class="py-2">Regulasi LPWA di Indonesia, yang tertuang dalam Perdirjen 3/2019, menetapkan beberapa persyaratan
+                    teknis, termasuk:</p>
+                <ul class="ml-6 list-decimal">
+                    <li><strong>Frekuensi:</strong> 920-923 MHz untuk LPWA non-seluler.<a href="#_ftn8"><sup>[8]</sup></a></li>
+                    <li><strong>Daya Pancar:</strong> Dibatasi untuk memastikan efisiensi energi dan mengurangi
+                        interferensi. Misalnya, daya pancar maksimum untuk End Node adalah 100 mW EIRP.<a
+                            href="#_ftn8"><sup>[8]</sup></a></li>
+                    <li><strong>Wideband dan Narrowband:</strong> Pengaturan bandwidth yang sesuai untuk optimasi
+                        penggunaan spektrum frekuensi.<a href="#_ftn8"><sup>[8]</sup></a> Lebar pita maksimum adalah 250 kHz
+                        untuk perangkat wideband.<a href="#_ftn8"><sup>[8]</sup></a></li>
+                    <li><strong>Duty Cycle:</strong> Batasan waktu transmisi untuk mencegah penggunaan berlebihan dan
+                        interferensi.<a href="#_ftn14"><sup>[8]</sup></a></li>
+                    <li><strong>Spurious Emission:</strong> Batasan emisi sinyal yang tidak diinginkan di luar pita
+                        frekuensi yang diizinkan untuk menjaga kualitas komunikasi.<a href="#_ftn8"><sup>[8]</sup></a></li>
+                    <li><strong>Filter:</strong> Penggunaan filter pada Gateway untuk memastikan sinyal yang dikirim
+                        sesuai dengan frekuensi yang diizinkan dan mengurangi interferensi.<a href="#_ftn16">[16]</a>
+                    </li>
+                </ul>
+                <p class="py-2">Komunitas Meshtastic di Indonesia perlu memastikan bahwa perangkat yang mereka gunakan memenuhi semua
+                    persyaratan ini agar tidak melanggar regulasi dan dapat beroperasi secara legal.</p>
+
+
+
+
+
+                <div class="container w-full grid grid-cols-1">
+                    <div class="flex flex-col items-center gap-1 text-center my-6">
+                        <h2 class="!font-extrabold !text-left text-xl">4. Potensi dan Tantangan bagi Komunitas Penghobi</h2>
+                    </div>
+                </div>
+
+
+
+                <p class="py-2"><strong>Potensi:</strong></p>
+                <ul class="ml-6 list-decimal">
+                    <li><strong>Komunikasi Jarak Jauh:</strong> LoRa memungkinkan komunikasi hingga puluhan kilometer,
+                        ideal untuk daerah terpencil atau aplikasi yang membutuhkan jangkauan luas.<a
+                            href="#_ftn2"><sup>[2]</sup></a></li>
+                    <li><strong>Konsumsi Daya Rendah:</strong> Perangkat LoRa dapat bertahan hingga beberapa tahun
+                        dengan baterai kecil, cocok untuk aplikasi IoT yang membutuhkan daya tahan lama.<a
+                            href="#_ftn"><sup>[2]</sup></a></li>
+                    <li><strong>Biaya Rendah:</strong> Produk-produk LoRa seperti Heltec dan Lilygo relatif terjangkau,
+                        memungkinkan lebih banyak orang untuk terlibat dalam komunitas dan mengembangkan aplikasi.</li>
+                </ul>
+                <p class="py-2"><strong>Tantangan:</strong></p>
+                <ul class="ml-6 list-decimal">
+                    <li><strong>Kepatuhan Regulasi:</strong> Komunitas harus memahami dan mematuhi persyaratan teknis
+                        yang ketat dari Perdirjen 3/2019, termasuk frekuensi, daya pancar, spurious emission, dan
+                        penggunaan filter.<a href="#_ftn8"><sup>[8]</sup></a></li>
+                    <li><strong>Interferensi:</strong> Penggunaan frekuensi 920-923 MHz yang sama oleh banyak perangkat,
+                        termasuk perangkat lain yang menggunakan LoRa atau teknologi LPWA lainnya, dapat menyebabkan
+                        interferensi dan menurunkan kualitas komunikasi.</li>
+                    <li><strong>Keterbatasan Infrastruktur:</strong> Di daerah terpencil, infrastruktur pendukung
+                        seperti gateway LoRa mungkin masih terbatas, yang dapat membatasi jangkauan dan keandalan
+                        jaringan Meshtastic.</li>
+                </ul>
+
+
+
+                <div class="container w-full grid grid-cols-1">
+                    <div class="flex flex-col items-center gap-1 text-center my-6">
+                        <h2 class="!font-extrabold !text-left text-xl">5. Aplikasi dan Inovasi oleh Komunitas</h2>
+                    </div>
+                </div>
+
+
+
+                <p class="py-2">Komunitas Meshtastic di Indonesia telah mengembangkan berbagai aplikasi, antara lain:</p>
+                <ul class="ml-6 list-decimal">
+                    <li><strong>Pemantauan Lingkungan:</strong> Menggunakan sensor LoRa untuk memantau kualitas udara,
+                        suhu, kelembaban, dan parameter lingkungan lainnya secara <em>real-time</em>.<a
+                            href="#_ftn9"><sup>[9]</sup></a></li>
+                    <li><strong>Sistem Keamanan:</strong> Membangun jaringan komunikasi darurat untuk situasi bencana,
+                        memungkinkan komunikasi antar-individu dan koordinasi bantuan ketika infrastruktur komunikasi
+                        konvensional terganggu.<a href="#_ftn10"><sup>[10]</sup></a></li>
+                    <li><strong>Smart Agriculture:</strong> Memantau kondisi tanah dan tanaman secara <em>real-time</em>
+                        menggunakan sensor LoRa, memungkinkan petani untuk mengoptimalkan irigasi, pemupukan, dan
+                        pengendalian hama.<a href="#_ftn11"><sup>[11]</sup></a></li>
+                    <li><strong>Pelacakan Aset:</strong> Menggunakan GPS dan LoRa untuk melacak kendaraan atau
+                        peralatan, membantu dalam manajemen logistik dan pencegahan pencurian.<a href="#_ftn12"><sup>[12]</sup></a>
+                    </li>
+                </ul>
+                <p class="py-2">Inovasi-inovasi ini menunjukkan bagaimana teknologi Meshtastic dapat dimanfaatkan untuk memecahkan
+                    masalah lokal sambil mematuhi regulasi yang berlaku.</p>
+
+
+                
+                <div class="container w-full grid grid-cols-1">
+                    <div class="flex flex-col items-center gap-1 text-center my-6">
+                        <h2 class="!font-extrabold !text-left text-xl">6. Rekomendasi untuk Pengembangan Lebih Lanjut</h2>
+                    </div>
+                </div>
+
+
+                <ul class="ml-6 list-decimal">
+                    <li><strong>Edukasi dan Pelatihan:</strong> Meningkatkan pemahaman komunitas tentang regulasi dan
+                        teknis LPWA, termasuk Perdirjen 3/2019, untuk memastikan kepatuhan dan penggunaan spektrum
+                        frekuensi yang optimal.</li>
+                    <li><strong>Kolaborasi dengan Pemerintah:</strong> Bekerja sama dengan otoritas terkait, seperti
+                        Ditjen SDPPI, untuk memastikan kepatuhan terhadap regulasi, mendapatkan dukungan infrastruktur,
+                        dan memfasilitasi pengembangan aplikasi Meshtastic yang bermanfaat bagi masyarakat.</li>
+                    <li><strong>Pengembangan Gateway LoRa:</strong> Membangun lebih banyak gateway LoRa di berbagai
+                        lokasi untuk memperluas jangkauan jaringan Meshtastic dan meningkatkan keandalan komunikasi,
+                        terutama di daerah terpencil.</li>
+                    <li><strong>Inovasi Produk:</strong> Mengembangkan perangkat LoRa yang lebih efisien, terjangkau,
+                        dan sesuai dengan kebutuhan lokal, serta mematuhi regulasi di Indonesia.</li>
+                </ul>
+
+
+
+                <div class="container w-full grid grid-cols-1">
+                    <div class="flex flex-col items-center gap-1 text-center my-6">
+                        <h2 class="!font-extrabold !text-left text-xl">Kesimpulan</h2>
+                    </div>
+                </div>
+
+                <p class="py-2">Pemanfaatan teknologi Meshtastic pada frekuensi LPWA oleh komunitas penghobi di Indonesia memiliki
+                    potensi besar untuk mendukung berbagai aplikasi IoT dan komunikasi jarak jauh.<a
+                        href="#_ftn2"><sup>[2]</sup></a> Namun, tantangan seperti kepatuhan regulasi dan keterbatasan
+                    infrastruktur perlu diatasi melalui edukasi, kolaborasi, dan inovasi. Dengan memanfaatkan
+                    produk-produk yang tersedia di pasaran dan mematuhi persyaratan teknis yang berlaku, komunitas dapat
+                    terus berkontribusi pada perkembangan teknologi IoT di Indonesia.</p>
+
+                <p class="py-2"><a id="_ftn1"><sup>[1]</sup></a> <a href="https://www.google.com/url?sa=E&amp;source=gmail&amp;q=https://meshtastic.org/">https://meshtastic.org/</a></p>
+                <p class="py-2"><a id="_ftn2"><sup>[2]</sup></a> <a href="http://download.garuda.kemdikbud.go.id/article.php?article=1566343&amp;amp;val=4379&amp;amp;title=Kajian%20Pemanfaatan%20IoT%20Berbasis%20LPWAN%20Untuk%20Jaringan%20Akuisisi%20Data%20ARG">Kajian Pemanfaatan IoT Berbasis LPWAN Untuk Jaringan Akuisisi Data ARG</a></p>
+                <p class="py-2"><a id="_ftn3"><sup>[3]</sup></a> <a href="https://heltec.org/project/wifi-lora-32/">https://heltec.org/project/wifi-lora-32/</a></p>
+                <p class="py-2"><a id="_ftn4"><sup>[4]</sup></a> <a href="https://www.google.com/url?sa=E&amp;source=gmail&amp;q=https://www.rakwireless.com/en-us/products">https://www.rakwireless.com/en-us/products</a></p>
+                <p class="py-2"><a id="_ftn5"><sup>[5]</sup></a> <a href="https://www.lilygo.cc/products/t-beam">https://www.lilygo.cc/products/t-beam</a></p>
+                <p class="py-2"><a id="_ftn6"><sup>[6]</sup></a> <a href="https://www.google.com/search?q=https://www.seeedstudio.com/wio-e5-devkit-lora-868mhz915mhz-p-5524.html">https://www.seeedstudio.com/wio-e5-devkit-lora-868mhz915mhz-p-5524.html</a></p>
+                <p class="py-2"><a id="_ftn7"><sup>[7]</sup></a> <a href="https://www.google.com/search?q=https://www.dragino.com/products/lora-gps-hat/">https://www.dragino.com/products/lora-gps-hat/</a></p>
+                <p class="py-2"><a id="_ftn8"><sup>[8]</sup></a> Perdirjen 2019-03 LPWA</p>
+                <p class="py-2"><a id="_ftn9"><sup>[9]</sup></a> Environmental Monitoring with Meshtastic</p>
+                <p class="py-2"><a id="_ftn10"><sup>[10]</sup></a> Emergency Communication with Meshtastic</p>
+                <p class="py-2"><a id="_ftn11"><sup>[11]</sup></a> Smart Agriculture with Meshtastic</p>
+                <p class="py-2"><a id="_ftn12"><sup>[12]</sup></a> Asset Tracking with Meshtastic</p>
+
+            </div>
+        </section>
+
+
+
+        <section class="bg-white py-20">
+
+            <div class=" items-center gap-3 text-center my-6">
+                <h1 class="text-3xl">Regulasi Frekuensi Bebas Lisensi</h1>
+            </div>
+
+
+            <div class="container w-full grid grid-cols-1">
+                <p>Pada tahun 2025, perkembangan regulasi Internet of Things (IoT) di Indonesia telah mengalami kemajuan
+                    signifikan. Pemerintah, melalui Kementerian Komunikasi dan Informatika (Kominfo), telah menerbitkan
+                    sejumlah peraturan dan standar untuk mendukung ekosistem IoT. Berikut adalah beberapa kemajuan
+                    terbaru yang relevan:</p>
+            </div>
+
+            <div class="container w-full grid grid-cols-1">
+                <div class="flex flex-col items-center gap-1 text-center my-6">
+                    <h2 class="!font-extrabold !text-left text-lg">1. Regulasi dan Standar IoT</h2>
+                </div>
+            </div>
+            <div class="container w-full grid grid-cols-1">
+                <p>Kominfo telah mengeluarkan beberapa regulasi dan standar teknis untuk mendukung IoT, termasuk:</p>
+
+                <ul class="ml-6 list-decimal">
+                    <li>
+                        <strong>Standar Kompetensi Kerja Nasional Indonesia (SKKNI)</strong> yang mengatur
+                        standarisasi IoT di Indonesia. Ini mencakup proses sertifikasi perangkat IoT yang efisien dan
+                        berbasis online melalui sistem OSS (Online Single Submission).<a class="hover:!text-red-500" 
+                            href="https://www.cloudcomputing.id/berita/kominfo-dorong-inovasi-iot-indonesia-dengan-regulasi-terbaru-dan-insentif"
+                            target="_blank"><sup>3</sup></a> <a class="hover:!text-red-500" 
+                            href="https://www.liputan6.com/tekno/read/5448007/kominfo-dukung-perkembangan-iot-di-indonesia-dengan-regulasi-dan-insentif"
+                            target="_blank"><sup>7</sup></a>
+                    </li>
+                    <li>
+                        <strong>Peraturan Presiden No. 47 Tahun 2023</strong> tentang Strategi Keamanan Siber
+                        Nasional dan Manajemen Krisis Siber, yang menekankan pentingnya keamanan perangkat IoT sebagai
+                        bagian dari infrastruktur digital nasional.<a class="hover:!text-red-500" 
+                            href="https://synapsis.id/regulasi-iot-di-indonesia.html" target="_blank"><sup>1</sup></a>
+                        <a class="hover:!text-red-500" href="https://www.cloudcomputing.id/pengetahuan-dasar/regulasi-iot-indonesia"
+                            target="_blank"><sup>9</sup></a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+            <div class="container w-full grid grid-cols-1">
+                <div class="flex flex-col items-center gap-1 text-center my-6">
+                    <h2 class="!font-extrabold !text-left text-lg">2. Alokasi Frekuensi untuk IoT</h2>
+                </div>
+            </div>
+            <div class="container w-full grid grid-cols-1">
+                <p>Menurut <strong>Permen Kominfo No. 1 Tahun 2019</strong> dan <strong>PERDIRJEN SDPPI No. 3 Tahun
+                        2019</strong>, frekuensi <strong>433 MHz</strong> dialokasikan untuk perangkat <strong>LPWA
+                        non-seluler</strong>. Batasan teknis yang berlaku meliputi.<a class="hover:!text-red-500" 
+                        href="https://teknologi.bisnis.com/read/20200930/84/1298731/pacu-investasi-iot-kemenkominfo-sediakan-frekuensi-rendah"
+                        target="_blank"><sup>4</sup></a> <a class="hover:!text-red-500" 
+                        href="https://teknologi.bisnis.com/read/20210104/84/1338363/tahun-ini-teknologi-iot-bakal-dapat-frekuensi-tambahan"
+                        target="_blank"><sup>9</sup></a></p>
+
+
+                <ul class="ml-6 list-decimal">
+                    <li>
+                        <strong>Daya Transmisi</strong>: Maksimal 100 mW EIRP untuk perangkat end-node dan 400 mW EIRP
+                        untuk gateway.
+                    </li>
+                    <li>
+                        <strong>Bandwidth</strong>: Maksimal 250 kHz untuk wideband dan 200 kHz untuk narrowband.
+                    </li>
+                    <li>
+                        <strong>Duty Cycle</strong>: Terbatas hingga 1% untuk uplink dan downlink pada perangkat
+                        wideband.
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+
+
+            <div class="container w-full grid grid-cols-1">
+                <div class="flex flex-col items-center gap-1 text-center my-6">
+                    <h2 class="!font-extrabold !text-left text-lg">3. Penggunaan untuk IoT</h2>
+                </div>
+            </div>
+            <div class="container w-full grid grid-cols-1">
+                <p>Frekuensi <strong>433 MHz</strong> sangat cocok untuk aplikasi IoT karena memiliki <strong>jangkauan
+                        yang luas</strong> dan <strong>konsumsi daya yang rendah</strong>. Ini membuatnya ideal untuk
+                    perangkat seperti sensor jarak jauh, smart city, dan aplikasi industri. Kominfo telah mengizinkan
+                    penggunaan frekuensi ini untuk uji coba dan implementasi IoT, termasuk teknologi
+                    <strong>LoRaWAN</strong>.</p>
+                <p class="py-2">Penggunaan frekuensi tidak berlisensi seperti 433 MHz memungkinkan pengembang dan
+                    perusahaan untuk mengimplementasikan solusi IoT tanpa biaya lisensi yang tinggi. Ini mendorong
+                    inovasi dan adopsi teknologi IoT di Indonesia.<a class="hover:!text-red-500" 
+                        href="https://teknologi.bisnis.com/read/20200930/84/1298731/pacu-investasi-iot-kemenkominfo-sediakan-frekuensi-rendah"
+                        target="_blank"><sup>4</sup></a> <a class="hover:!text-red-500" 
+                        href="https://teknologi.bisnis.com/read/20210104/84/1338363/tahun-ini-teknologi-iot-bakal-dapat-frekuensi-tambahan"
+                        target="_blank"><sup>9</sup></a></p>
+            </div>
+
+
+
+
+
+
+            <div class="container w-full grid grid-cols-1">
+                <div class="flex flex-col items-center gap-1 text-center my-6">
+                    <h2 class="!font-extrabold !text-left text-lg">4. Kebijakan Telekomunikasi dan Infrastruktur Digital
+                    </h2>
+                </div>
+            </div>
+            <div class="container w-full grid grid-cols-1">
+                <p>Pemerintah fokus pada pembangunan infrastruktur telekomunikasi untuk mendukung IoT, termasuk
+                    penyediaan jaringan <strong>NB-IoT (Narrowband IoT)</strong>. Ini memungkinkan perangkat IoT
+                    beroperasi dengan efisiensi energi yang tinggi dan jangkauan yang luas.<a class="hover:!text-red-500" 
+                        href="https://synapsis.id/regulasi-iot-di-indonesia.html" target="_blank"><sup>1</sup></a> <a class="hover:!text-red-500" 
+                        href="https://www.cloudcomputing.id/pengetahuan-dasar/regulasi-iot-indonesia"
+                        target="_blank"><sup>9</sup></a></p>
+            </div>
+
+
+
+
+
+
+            <div class="container w-full grid grid-cols-1">
+                <div class="flex flex-col items-center gap-1 text-center my-6">
+                    <h2 class="!font-extrabold !text-left text-lg">5. Keamanan dan Privasi Data</h2>
+                </div>
+            </div>
+            <div class="container w-full grid grid-cols-1">
+                <p>Regulasi seperti Undang-Undang Perlindungan Data Pribadi (UU PDP) telah diterapkan untuk melindungi
+                    data yang dikumpulkan oleh perangkat IoT. Ini mencakup kewajiban bagi penyedia layanan IoT untuk
+                    menjaga keamanan data pengguna dan memastikan transparansi dalam pengumpulan data.<a class="hover:!text-red-500" 
+                        href="https://synapsis.id/regulasi-iot-di-indonesia.html" target="_blank"><sup>1</sup></a> <a class="hover:!text-red-500" 
+                        href="https://www.cloudcomputing.id/pengetahuan-dasar/regulasi-iot-indonesia"
+                        target="_blank"><sup>9</sup></a></p>
+            </div>
+
+
+
+
+
+
+            <div class="container w-full grid grid-cols-1">
+                <div class="flex flex-col items-center gap-1 text-center my-6">
+                    <h2 class="!font-extrabold !text-left text-lg">6. Insentif dan Dukungan Pemerintah</h2>
+                </div>
+            </div>
+            <div class="container w-full grid grid-cols-1">
+                <p>Kominfo memberikan insentif berupa <strong>frekuensi gratis</strong> bagi para inovator IoT
+                    untuk mendorong pengembangan produk dan layanan IoT. Selain itu, pemerintah juga memfasilitasi
+                    kolaborasi antara sektor swasta dan publik untuk mempercepat adopsi IoT.<a class="hover:!text-red-500" 
+                        href="https://www.cloudcomputing.id/berita/kominfo-dorong-inovasi-iot-indonesia-dengan-regulasi-terbaru-dan-insentif"
+                        target="_blank"><sup>3</sup></a> <a class="hover:!text-red-500" 
+                        href="https://www.liputan6.com/tekno/read/5448007/kominfo-dukung-perkembangan-iot-di-indonesia-dengan-regulasi-dan-insentif"
+                        target="_blank"><sup>7</sup></a></p>
+            </div>
+
+
+            <div class="container w-full grid grid-cols-1">
+                <div class="flex flex-col items-center gap-1 text-center my-6">
+                    <h2 class="!font-extrabold !text-left text-lg">7. Tantangan yang Masih Dihadapi</h2>
+                </div>
+            </div>
+            <div class="container w-full grid grid-cols-1">
+                <p>Meskipun kemajuan signifikan telah dicapai, beberapa tantangan masih ada, seperti:</p>
+
+                <ul class="ml-6 list-decimal">
+                    <li>
+                        <strong>Batasan Duty Cycle</strong>: Penggunaan frekuensi IoT masih dibatasi hingga 1%, yang
+                        dapat membatasi kinerja perangkat IoT.<a class="hover:!text-red-500" 
+                            href="https://www.cloudcomputing.id/berita/kominfo-dorong-inovasi-iot-indonesia-dengan-regulasi-terbaru-dan-insentif"
+                            target="_blank"><sup>3</sup></a> <a class="hover:!text-red-500" 
+                            href="https://www.liputan6.com/tekno/read/5448007/kominfo-dukung-perkembangan-iot-di-indonesia-dengan-regulasi-dan-insentif"
+                            target="_blank"><sup>7</sup></a>
+                    </li>
+                    <li>
+                        <strong>Interoperabilitas</strong>: Masalah interoperabilitas antar perangkat IoT masih menjadi
+                        hambatan, terutama karena perbedaan protokol komunikasi.<a
+                            href="http://laragon2.meshtastic.my.id/pelajari.html" target="_blank"><sup>12</sup></a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="container w-full grid grid-cols-1">
+                <div class="flex flex-col items-center gap-1 text-center my-6">
+                    <h2 class="!font-extrabold !text-left text-lg">Kesimpulan</h2>
+                </div>
+            </div>
+            <div class="container w-full grid grid-cols-1">
+                <p>Pada tahun 2025, Indonesia telah membuat langkah besar dalam mengembangkan regulasi dan infrastruktur
+                    untuk mendukung IoT. Namun, tantangan seperti batasan teknis dan interoperabilitas masih perlu
+                    diatasi untuk memaksimalkan potensi IoT di berbagai sektor. Dengan regulasi yang semakin matang dan
+                    dukungan pemerintah, IoT di Indonesia diprediksi akan terus berkembang pesat dalam beberapa tahun ke
+                    depan.<a class="hover:!text-red-500" href="https://synapsis.id/regulasi-iot-di-indonesia.html" target="_blank"><sup>1</sup></a>
+                    <a href="https://www.cloudcomputing.id/berita/kominfo-dorong-inovasi-iot-indonesia-dengan-regulasi-terbaru-dan-insentif"
+                        target="_blank"><sup>3</sup></a> <a class="hover:!text-red-500" 
+                        href="https://www.liputan6.com/tekno/read/5448007/kominfo-dukung-perkembangan-iot-di-indonesia-dengan-regulasi-dan-insentif"
+                        target="_blank"><sup>7</sup></a></p>
+            </div>
+
+
+
+
+        </section>
+
+
+    </main>
+
+    <!--~~~~~~~~~~~~~~~ External Footer ~~~~~~~~~~~~~~~-->
+    <div id="footer-placeholder"></div>
+
+
+    <!--~~~~~~~~~~~~~~~ Scroll Up ~~~~~~~~~~~~~~~-->
+    <a href="#"
+        class="fixed right-4 -bottom-1/2 bg-green-600 shadow-sm inline-block px-3 py-1 md:px-4 md:py-2 rounded-md text-lg z-50 hover:-translate-y-1 duration-300"
+        id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--~~~~~~~~~~~~~~~ Swiper JS ~~~~~~~~~~~~~~~-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--~~~~~~~~~~ SCROLLREVEAL ~~~~~~~~~~-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--~~~~~~~~~~ mainjs ~~~~~~~~~~-->
+    <script src="main.js"></script>
+
+</body>
+
+</html>
