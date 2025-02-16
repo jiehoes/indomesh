@@ -1175,6 +1175,10 @@ video {
   text-align: center;
 }
 
+.text-justify{
+  text-align: justify;
+}
+
 .font-Lobster{
   font-family: Lobster, sans-serif;
 }
