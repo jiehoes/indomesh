@@ -1189,6 +1189,10 @@ video {
   text-align: center;
 }
 
+.\!text-right{
+  text-align: right !important;
+}
+
 .text-justify{
   text-align: justify;
 }
