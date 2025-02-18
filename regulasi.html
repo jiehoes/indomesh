@@ -86,7 +86,7 @@
                 <p class="py-2"><strong>LPWA (Low-Power Wide-Area Network)</strong> adalah jenis jaringan nirkabel yang dirancang
                     untuk perangkat IoT (Internet of Things) yang membutuhkan komunikasi jarak jauh dengan konsumsi daya
                     rendah.<a href="#_ftn2"><sup>[2]</sup></a> LPWA menggunakan berbagai teknologi, termasuk LoRaWAN, NB-IoT, dan
-                    Sigfox, untuk mengirimkan data dalam jumlah kecil dengan efisiensi energi yang tinggi.<a
+                    Sigfox, untuk mengirimkan data dalam jumlah kecil dengan efisiensi daya yang tinggi.<a
                         href="#_ftn2"><sup>[2]</sup></a></p>
                 <p class="py-2">Di Indonesia, frekuensi yang diizinkan untuk penggunaan LPWA non-seluler adalah 920-923 MHz, sesuai
                     dengan Peraturan Direktur Jenderal Sumber Daya dan Perangkat Pos dan Informatika Nomor 3 Tahun
@@ -509,6 +509,111 @@
 
 
         </section>
+
+
+
+
+
+
+
+
+
+
+
+        <section class="py-20">
+
+            <div class=" items-center gap-3 text-center my-6">
+                <h1 class="text-4xl">Gangguan Akibat Batasan Duty Cycle 1%</h1>
+            </div>
+
+
+            <div class="container w-full grid grid-cols-1">
+                <p class="py-2">Dalam konteks perangkat IoT (Internet of Things), <em>duty cycle</em> mengacu pada persentase waktu
+                perangkat radio (seperti modul Wi-Fi atau LoRa) aktif dan mengirimkan data dalam periode waktu tertentu.
+                Keterbatasan 1% <em>duty cycle</em> berarti perangkat hanya dapat aktif dan mengirim data selama 1% dari
+                total waktu, dan 99% sisanya harus dalam keadaan tidak aktif atau <em>sleep mode</em> untuk menghemat
+                daya.</p>
+                <p class="py-2">Keterbatasan <em>duty cycle</em> ini dapat menyebabkan beberapa gejala gangguan pada perangkat IoT,
+                antara lain:</p>
+            </div>
+
+            <div class="container w-full grid grid-cols-1">
+
+                <ul class="ml-6 list-decimal">
+                    <li>
+                        <p><strong>Penundaan Pengiriman Data:</strong> Perangkat harus menunggu hingga siklus aktif
+                            berikutnya untuk mengirim data. Hal ini dapat menyebabkan penundaan yang signifikan dalam
+                            pengiriman informasi, terutama jika data perlu dikirim secara berkala atau secara real-time.
+                        </p>
+                    </li>
+                    <li>
+                        <p><strong>Keterbatasan Throughput:</strong> Jumlah data yang dapat dikirimkan oleh perangkat dalam
+                            satuan waktu terbatas karena hanya sedikit waktu yang tersedia untuk transmisi. Hal ini dapat
+                            menjadi masalah jika perangkat perlu mengirimkan data dalam jumlah besar.</p>
+                    </li>
+                    <li>
+                        <p><strong>Responsivitas Berkurang:</strong> Perangkat mungkin tidak dapat merespons perintah atau
+                            permintaan dari server atau perangkat lain dengan cepat karena harus menunggu siklus aktif
+                            berikutnya.</p>
+                    </li>
+                    <li>
+                        <p><strong>Kesulitan dalam Aplikasi Real-time:</strong> Aplikasi yang memerlukan komunikasi dua arah
+                            secara terus-menerus atau umpan balik <em>real-time</em> mungkin sulit diimplementasikan pada
+                            perangkat dengan keterbatasan <em>duty cycle</em> 1%.</p>
+                    </li>
+                    <li>
+                        <p><strong>Masalah Sinkronisasi:</strong> Perangkat dengan <em>duty cycle</em> rendah mungkin
+                            mengalami kesulitan dalam sinkronisasi dengan perangkat lain atau server karena waktu aktifnya
+                            yang terbatas.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="container w-full grid grid-cols-1">
+                <div class="flex flex-col items-center gap-1 text-center my-6">
+                    <h2 class="!font-extrabold !text-left text-xl">Solusi</h2>
+                </div>
+            </div>
+            <div class="container w-full grid grid-cols-1">
+
+                <p class="py-2">Untuk mengatasi masalah ini, beberapa solusi dapat dipertimbangkan:</p>
+
+                <ul class="ml-6 list-decimal">
+                    <li>
+                        <p><strong>Menggunakan protokol komunikasi yang efisien:</strong> Protokol seperti LoRaWAN atau
+                            Sigfox dirancang khusus untuk aplikasi IoT dengan keterbatasan <em>duty cycle</em> rendah.</p>
+                    </li>
+                    <li>
+                        <p><strong>Mengoptimalkan interval pengiriman data:</strong> Mengatur interval pengiriman data yang
+                            tepat untuk meminimalkan penundaan dan memastikan data terkirim pada waktu yang optimal.</p>
+                    </li>
+                    <li>
+                        <p><strong>Menggunakan teknik <em>buffering</em>:</strong> Data dapat disimpan sementara dalam
+                            <em>buffer</em> dan dikirimkan secara berkala selama siklus aktif untuk meningkatkan
+                            <em>throughput</em>.</p>
+                    </li>
+                    <li>
+                        <p><strong>Mengimplementasikan mode <em>sleep</em> yang efisien:</strong> Memastikan perangkat masuk
+                            ke mode <em>sleep</em> dengan konsumsi daya minimal selama periode tidak aktif untuk menghemat
+                            baterai.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="container w-full grid grid-cols-1">
+                <div class="flex flex-col items-center gap-1 text-center my-6">
+                    <h2 class="!font-extrabold !text-left text-xl">Kesimpulan</h2>
+                </div>
+            </div>
+            <div class="container w-full grid grid-cols-1">
+                <p class="py-2">Keterbatasan 1% <em>duty cycle</em> pada perangkat IoT dapat menimbulkan berbagai gangguan, terutama
+                    terkait penundaan pengiriman data, keterbatasan <em>throughput</em>, dan responsivitas. Namun, dengan
+                    pemilihan teknologi yang tepat, optimasi interval pengiriman data, dan implementasi mode <em>sleep</em>
+                    yang efisien, masalah ini dapat diatasi dan perangkat IoT tetap dapat berfungsi dengan baik.</p>
+            </div>
+        </section>
+
+
 
 
     </main>

@@ -86,7 +86,7 @@
                 <p class="py-2 text-justify">Indonesia, sebagai negara kepulauan dengan wilayah yang luas dan beragam, menghadapi tantangan besar
                     dalam menyediakan konektivitas yang merata, terutama di daerah terpencil. Teknologi <strong>Meshtastic</strong>, yang
                     berbasis <strong>LoRa (Long Range)</strong>, menawarkan solusi komunikasi alternatif yang hemat
-                    biaya dan efisien. Dengan memanfaatkan frekuensi <b>LPWA (Low Power Wide Area)</b> baik yang bebas lisensi (433MHz) maupun yang berlisensi (920˗923MHz)
+                    biaya dan efisien. Dengan memanfaatkan frekuensi <b>LPWA (Low Power Wide Area)</b> baik yang bebas lisensi yaitu frekuensi 433MHz atau frekuensi 923-930MHz yang disarankan untuk komunikasi Machine-to-Machine (M2M), maupun yang berlisensi yaitu frekuensi 920˗923MHz
                     Meshtastic memiliki potensi besar untuk mendukung pengembangan <strong>IoT
                         (Internet of Things)</strong> di Indonesia. Berikut adalah analisis peluang dan tantangan
                     pengembangan Meshtastic di Indonesia, serta bagaimana regulasi persyaratan teknis perangkat berfrekuensi LPWA mendukung pengembangannya.</p>
@@ -137,42 +137,15 @@
                     <h2 class="!font-extrabold !text-left text-xl">2. Dukungan Regulasi Frekuensi</h2>
                 </div>
             </div>
+
+
+
             <div class="container w-full grid grid-cols-1">
-                <h4 class="text-xl font-bold">a. Frekuensi Bebas Lisensi (433MHz)</h4>
-                <p class="py-2 text-justify">Pemerintah Indonesia melalui Kementerian Komunikasi dan Informatika (Kominfo) telah mengeluarkan sejumlah regulasi untuk mendukung penggunaan frekuensi bebas lisensi seperti 433MHz. Regulasi ini mencakup:</p>
 
-                <ul class="ml-6 list-decimal text-justify">
-                    <li class="pt-2">
-                        <strong>Alokasi Frekuensi</strong> Frekuensi 433MHz dialokasikan untuk perangkat Low Power
-                        Wide Area Network (LPWA) yang tidak memerlukan lisensi khusus, asalkan mematuhi batasan teknis
-                        seperti daya transmisi maksimal 100mW EIRP untuk perangkat end-node dan 400mW EIRP untuk
-                        gateway.
-                    </li>
-                    <li class="">
-                        <strong>Standar Teknis</strong> Kominfo telah menetapkan standar teknis untuk penggunaan
-                        frekuensi ini, termasuk batasan bandwidth (250kHz untuk wideband dan 200kHz untuk narrowband)
-                        dan duty cycle (maksimal 1%).
-                    </li>
-                    <li class="pb-2">
-                        <strong>Insentif Pemerintah</strong> Kominfo memberikan insentif berupa frekuensi gratis
-                        bagi para inovator IoT, termasuk pengembang Meshtastic, untuk mendorong inovasi dan adopsi
-                        teknologi ini.
-                    </li>
-                </ul>
+                <p class="py-2 text-justify">Pemerintah Indonesia telah mengeluarkan regulasi dan standar nasional untuk mendukung perkembangan IoT. Kominfo memberikan insentif berupa frekuensi bebas lisensi bagi para inovator di dunia IoT. Beberapa pita frekuensi yang diperbolehkan untuk aplikasi Internet of Things (IoT) adalah 433MHz dan 2.4GHz (2400MHz). Selain itu juga pita frekuensi 923-930MHz yang disarankan untuk komunikasi Machine-to-Machine (M2M).</p>
+                
+                <h4 class="text-xl font-bold pt-4">A. Frekuensi Berlisensi (920˗923MHz)</h4>
 
-                <p class="py-2 text-justify">Meskipun Kominfo memberikan frekuensi bebas lisensi untuk pengembangan aplikasi IoT seperti LoRa, namun pemahaman dan kepatuhan masyarakat terhadap regulasi yang berlaku tetap penting dilakukan. Frekuensi ini memiliki beberapa karakteristik, yaitu:</p>
-
-                <ul class="ml-6 list-decimal text-justify">
-                    <li class="pt-2">
-                        <strong>Jangkauan yang lebih jauh</strong> Frekuensi ini memiliki jangkauan yang lebih jauh karena panjang gelombangnya yang lebih panjang, sehingga lebih efektif dalam menembus penghalang seperti dinding atau pepohonan. Namun, frekuensi ini memiliki <b>estimated radiative power (ERP)</b> yang lebih rendah.
-                    </li>
-                    <li class="pb-2">
-                        <strong>Interferensi yang Tinggi</strong> Sinyal pada frekuensi ini lebih rentan terhadap <b>distorsi</b> dan <b>spurious emissions</b> yang terjadi setiap lima atau enam detik, lebih sering daripada pada frekuensi 920˗923MHz.
-                    </li>
-                </ul>
-
-
-                <h4 class="text-xl font-bold pt-4">b. Frekuensi Berlisensi (920˗923MHz)</h4>
 
                 <p class="py-2 text-justify">Selain frekuensi bebas lisensi, Meshtastic juga dapat beroperasi pada frekuensi berlisensi 920˗923MHz di Indonesia. Penggunaan frekuensi ini memerlukan izin kelas dari Kominfo.
                     Regulasi untuk frekuensi 920˗923MHz mencakup persyaratan teknis yang lebih spesifik, seperti:</p>
@@ -202,6 +175,44 @@
                             <strong>Potensi Gangguan Sinyal yang Rendah</strong> Frekuensi ini menunjukkan sinyal yang lebih pendek dan lebih jarang mengalami gangguan, terutama karena penggunaan sistem timing interleaving dan protokol digital seperti <b>MQTT</b> dan <b>LoRa</b>.
                         </li>
                     </ul>
+
+                <h4 class="text-xl font-bold">B. Frekuensi Bebas Lisensi (433MHz, 923˗930MHz)</h4>
+                <p class="py-2 text-justify">Pemerintah Indonesia melalui Kementerian Komunikasi dan Informatika (Kominfo) telah mengeluarkan sejumlah regulasi untuk mendukung penggunaan frekuensi bebas lisensi seperti 433MHz. Regulasi ini mencakup:</p>
+
+                <ul class="ml-6 list-decimal text-justify">
+                    <li class="pt-2">
+                        <strong>Alokasi Frekuensi</strong> Frekuensi 433MHz dialokasikan untuk perangkat Low Power
+                        Wide Area Network (LPWA) yang tidak memerlukan lisensi khusus, asalkan mematuhi batasan teknis
+                        seperti daya transmisi maksimal 100mW EIRP untuk perangkat end-node dan 400mW EIRP untuk
+                        gateway.
+                    </li>
+                    <li class="">
+                        <strong>Standar Teknis</strong> Kominfo telah menetapkan standar teknis untuk penggunaan
+                        frekuensi ini, termasuk batasan bandwidth (250kHz untuk wideband dan 200kHz untuk narrowband)
+                        dan duty cycle (maksimal 1%).
+                    </li>
+                    <li class="pb-2">
+                        <strong>Insentif Pemerintah</strong> Kominfo memberikan insentif berupa frekuensi gratis
+                        bagi para inovator IoT, termasuk pengembang Meshtastic, untuk mendorong inovasi dan adopsi
+                        teknologi ini.
+                    </li>
+                </ul>
+
+                <p class="py-2 text-justify">Meskipun Kominfo memberikan frekuensi bebas lisensi untuk pengembangan aplikasi IoT seperti LoRa, namun pemahaman dan kepatuhan masyarakat terhadap regulasi yang berlaku tetap penting dilakukan. Frekuensi ini memiliki beberapa karakteristik, yaitu:</p>
+
+                <ul class="ml-6 list-decimal text-justify">
+                    <li class="pt-2">
+                        <strong>Jangkauan yang lebih jauh</strong> Frekuensi ini memiliki jangkauan yang lebih jauh karena panjang gelombangnya yang lebih panjang, sehingga lebih efektif dalam menembus penghalang seperti dinding atau pepohonan. Namun, frekuensi ini memiliki <b>estimated radiative power (ERP)</b> yang lebih rendah.
+                    </li>
+                    <li class="pb-2">
+                        <strong>Interferensi yang Tinggi</strong> Sinyal pada frekuensi 433MHz  lebih rentan terhadap <b>distorsi</b> dan <b>spurious emissions</b> yang terjadi setiap 5˗6&nbsp;second.
+                    </li>
+                    <li class="pb-2">
+                        <strong>Gangguan sinyal</strong> Gangguan sinyal kerap terjadi pada frekuensi 923-930MHz karena adanya beberapa batasan kapasitas penggunaan 1% <b>Duty Cycle</b>.
+                    </li>
+                </ul>
+
+
 
             </div>
 
@@ -288,6 +299,8 @@
                         <strong>Batasan Duty Cycle</strong> Batasan duty cycle sebesar 1% dapat membatasi kinerja
                         perangkat Meshtastic. Solusinya adalah dengan mengoptimalkan penggunaan bandwidth dan
                         mengembangkan protokol komunikasi yang lebih efisien.
+                        Solusi lain yang perlu dipertimbangkan adalah
+                        permohonan kepada pemerintah untuk meningkatkan Duty Cycle menjadi 10%, sehingga memberikan kegunaan yang lebih optimal bagi produk IoT.
                     </li>
                     <li class="">
                         <strong>Interoperabilitas</strong> Masalah interoperabilitas antar perangkat IoT masih
@@ -300,6 +313,9 @@
                         diperlukan untuk meningkatkan adopsi teknologi ini.
                     </li>
                 </ul>
+
+                <p class="py-2 text-justify">Langkah-langkah progresif perlu dilakukan oleh semua pihak baik pemerintah, masyarakat dan pengusaha yang memiliki peran sebagai pendorong utama inovasi di ranah IoT, dengan membuka peluang besar bagi para pengembang dan inovator untuk membawa Indonesia lebih jauh ke arah era digital yang lebih cerdas dan terkoneksi.</p>
+
             </div>
 
 
