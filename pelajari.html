@@ -83,13 +83,7 @@
             </div>
 
             <div class="container w-full grid grid-cols-1">
-                <p class="py-2 text-justify">Indonesia, sebagai negara kepulauan dengan wilayah yang luas dan beragam, menghadapi tantangan besar
-                    dalam menyediakan konektivitas yang merata, terutama di daerah terpencil. Teknologi <strong>Meshtastic</strong>, yang
-                    berbasis <strong>LoRa (Long Range)</strong>, menawarkan solusi komunikasi alternatif yang hemat
-                    biaya dan efisien. Dengan memanfaatkan frekuensi <b>LPWA (Low Power Wide Area)</b> baik yang bebas lisensi yaitu frekuensi 433MHz atau frekuensi 923-930MHz yang disarankan untuk komunikasi Machine-to-Machine (M2M), maupun yang berlisensi yaitu frekuensi 920˗923MHz
-                    Meshtastic memiliki potensi besar untuk mendukung pengembangan <strong>IoT
-                        (Internet of Things)</strong> di Indonesia. Berikut adalah analisis peluang dan tantangan
-                    pengembangan Meshtastic di Indonesia, serta bagaimana regulasi persyaratan teknis perangkat berfrekuensi LPWA mendukung pengembangannya.</p>
+                <p class="py-2 text-justify">Indonesia, sebagai negara kepulauan yang luas, menghadapi tantangan dalam pemerataan konektivitas, terutama di daerah terpencil dan pedesaan. Infrastruktur komunikasi konvensional, seperti jaringan seluler dan internet kabel, seringkali sulit dijangkau atau terlalu mahal untuk dibangun di wilayah-wilayah ini. Teknologi <strong>Meshtastic</strong>, yang merupakan sistem komunikasi jaringan mesh berbasis radio <strong>LoR</strong>a <strong>(Long Range),</strong> menawarkan solusi alternatif yang menjanjikan. Dengan memanfaatkan frekuensi <strong>LPWA</strong> <strong>(Low Power Wide Area)</strong> yang hemat energi dan berjangkauan luas, Meshtastic memungkinkan komunikasi data jarak jauh dengan biaya yang relatif rendah.</p>
             </div>
 
 
@@ -134,7 +128,7 @@
 
             <div class="container w-full grid grid-cols-1">
                 <div class="flex flex-col items-center gap-1 text-center my-6">
-                    <h2 class="!font-extrabold !text-left text-xl">2. Dukungan Regulasi Frekuensi</h2>
+                    <h2 class="!font-extrabold !text-left text-xl">2. Dukungan Regulasi Frekuensi dan Izin Kelas</h2>
                 </div>
             </div>
 
@@ -142,79 +136,21 @@
 
             <div class="container w-full grid grid-cols-1">
 
-                <p class="py-2 text-justify">Pemerintah Indonesia telah mengeluarkan regulasi dan standar nasional untuk mendukung perkembangan IoT. Kementerian Komunikasi dan Informatika (Kominfo) memberikan insentif berupa frekuensi bebas lisensi bagi para inovator di dunia IoT. Beberapa pita frekuensi yang diperbolehkan untuk aplikasi Internet of Things (IoT) adalah 433MHz dan 2.4GHz (2400MHz). Selain itu juga pita frekuensi 923-930MHz yang disarankan untuk komunikasi Machine-to-Machine (M2M).</p>
-                
-                <h4 class="text-xl font-bold">A. Frekuensi Bebas Lisensi (433MHz, 923˗930MHz)</h4>
-                <p class="py-2 text-justify">Pemerintah Indonesia melalui Kominfo telah mengeluarkan sejumlah regulasi untuk mendukung penggunaan frekuensi bebas lisensi yaitu 433MHz. Regulasi ini mencakup:</p>
+                <p class="py-2 text-justify">Pemerintah Indonesia, melalui Kementerian Komunikasi dan Informatika (Kominfo), telah menunjukkan dukungan terhadap pengembangan teknologi <strong>IoT</strong> (Internet of Things) dengan menyediakan regulasi yang memfasilitasi penggunaan frekuensi LPWA, termasuk yang relevan dengan Meshtastic.</p>
 
                 <ul class="ml-6 list-decimal text-justify">
                     <li class="pt-2">
-                        <strong>Alokasi Frekuensi</strong> Frekuensi 433MHz dialokasikan untuk perangkat Low Power Wide Area Network (LPWA) yang tidak memerlukan lisensi khusus, asalkan mematuhi batasan teknis seperti daya transmisi maksimal 100mW (~20dBm) EIRP untuk perangkat end-node dan 400mW (~26dBm) EIRP  untuk perangkat gateway. EIRP (Equivalent Isotropically Radiated Power) adalah ukuran daya yang dipancarkan oleh antena.
+                        <strong>Frekuensi 433 MHz:</strong> dialokasikan untuk perangkat LPWA tanpa memerlukan lisensi khusus, namun tetap ada persyaratan teknis yang harus dipenuhi, seperti batasan daya transmisi dan bandwidth.
                     </li>
                     <li class="">
-                        <strong>Standar Teknis</strong> Kominfo telah menetapkan standar teknis untuk penggunaan
-                        frekuensi ini, termasuk batasan bandwidth (250kHz untuk wideband dan 200kHz untuk narrowband)
-                        dan duty cycle (maksimal 1%).
+                        <strong>Frekuensi 923 MHz:</strong> termasuk dalam kategori <strong>izin kelas</strong>, yang berarti penggunaannya diizinkan dengan memenuhi persyaratan teknis tertentu tanpa perlu mengajukan izin individual. Izin kelas bertujuan untuk menyederhanakan proses perizinan dan mendorong pemanfaatan frekuensi radio untuk aplikasi seperti <strong>SRD</strong> (Short Range Devices) yang memiliki risiko interferensi rendah.
                     </li>
                     <li class="pb-2">
-                        <strong>Insentif Pemerintah</strong> Kominfo memberikan insentif berupa frekuensi gratis
-                        bagi para inovator IoT, termasuk pengembang Meshtastic, untuk mendorong inovasi dan adopsi
-                        teknologi ini.
+                        <strong>Peraturan Menteri Komunikasi dan Informatika Nomor 1 Tahun 2019</strong> mengatur penggunaan frekuensi <strong>433</strong> <strong>MHz</strong> dan <strong>923</strong> <strong>MHz</strong>, menetapkan standar teknis, dan memberikan insentif bagi para inovator IoT.
                     </li>
                 </ul>
-
-                <p class="py-2 text-justify">Meskipun Kominfo memberikan frekuensi bebas lisensi untuk pengembangan aplikasi IoT seperti LoRa, namun pemahaman dan kepatuhan masyarakat terhadap regulasi yang berlaku tetap penting dilakukan. Frekuensi ini memiliki beberapa karakteristik, yaitu:</p>
-
-                <ul class="ml-6 list-decimal text-justify">
-                    <li class="pt-2">
-                        <strong>Jangkauan yang lebih jauh</strong> Frekuensi ini memiliki jangkauan yang lebih jauh karena panjang gelombangnya yang lebih panjang, sehingga lebih efektif dalam menembus penghalang seperti dinding atau pepohonan. Namun, frekuensi ini memiliki <b>estimated radiative power (ERP)</b> yang lebih rendah.
-                    </li>
-                    <li class="pb-2">
-                        <strong>Interferensi yang Tinggi</strong> Sinyal pada frekuensi 433MHz  lebih rentan terhadap <b>distorsi</b> dan <b>spurious emissions</b> yang bisa terjadi pada tiap interval beberapa second saja.
-                    </li>
-                    <li class="pb-2">
-                        <strong>Gangguan sinyal</strong> Gangguan sinyal kerap terjadi pada perangkat dengan frekuensi 923-930MHz karena adanya batasan kapasitas penggunaan <b>Duty Cycle</b> yang hanya 1% saja.
-                    </li>
-                </ul>
-
-
-                <h4 class="text-xl font-bold pt-4">B. Frekuensi Berlisensi (920˗923MHz)</h4>
-
-
-                <p class="py-2 text-justify">Selain pada frekuensi bebas lisensi, Meshtastic juga dapat beroperasi pada frekuensi berlisensi yaitu antara 920˗923MHz di Indonesia. Penggunaan frekuensi ini memerlukan izin kelas dari Kominfo.
-                    Regulasi untuk frekuensi 920˗923MHz mencakup persyaratan teknis yang lebih spesifik, seperti:</p>
-
-                    <ul class="ml-6 list-decimal text-justify">
-                        <li class="pt-2">
-                            <strong>Daya Pancar</strong> Dibatasi untuk memastikan efisiensi energi dan mengurangi interferensi.
-                        </li>
-                        <li class="">
-                            <strong>Spurious Emission</strong> Memiliki batasan yang ketat untuk mencegah gangguan pada layanan lain.
-                        </li>
-                        <li class="pb-2">
-                            <strong>Filter</strong> Diperlukan pada gateway untuk menyaring sinyal di luar pita frekuensi yang diizinkan.
-                        </li>
-                    </ul>
-
-                    <p class="py-2 text-justify">Meskipun memerlukan izin, penggunaan frekuensi 920˗923MHz dapat memberikan beberapa keuntungan, seperti:</p>
-
-                    <ul class="ml-6 list-decimal text-justify">
-                        <li class="pt-2">
-                            <strong>Potensi Bandwidth yang Lebih Besar</strong> Frekuensi ini memiliki <b>ERP</b> yang lebih tinggi, yang berarti sinyalnya lebih kuat sehingga transfer data yang lebih cepat.
-                        </li>
-                        <li class="pt-2">
-                            <strong>Jangkauan yang lebih pendek</strong> Frekuensi ini memiliki sinyal yang lebih kuat karena dikompensasi oleh jarak yang lebih pendek. Sehingga, jangkauannya lebih terbatas dibandingkan 433MHz.
-                        </li>
-                        <li class="pb-2">
-                            <strong>Potensi Gangguan Sinyal yang Rendah</strong> Frekuensi ini menunjukkan sinyal yang lebih pendek dan lebih jarang mengalami gangguan, terutama karena penggunaan sistem timing interleaving dan protokol digital seperti <b>MQTT</b> dan <b>LoRa</b>.
-                        </li>
-                    </ul>
-
 
             </div>
-
-
-
 
 
 
@@ -257,20 +193,16 @@
 
                 <ul class="ml-6 list-decimal text-justify">
                     <li class="pt-2">
-                        <strong>Pemantauan Lingkungan</strong> Memantau kondisi lingkungan seperti kualitas udara,
-                        suhu, dan kelembaban di daerah terpencil.
+                        <strong>Pemantauan Lingkungan</strong> Membangun jaringan sensor nirkabel untuk memantau kualitas udara, kebakaran hutan, dan parameter lingkungan lainnya, terutama di daerah-daerah yang sulit dijangkau.
                     </li>
                     <li class="">
-                        <strong>Pertanian dan Perikanan Presisi</strong> Membantu petani dan nelayan memantau
-                        kondisi lahan dan perairan secara real-time.
+                        <strong>Pertanian dan Perikanan Presisi</strong> Membantu petani dan nelayan dalam mengumpulkan data real-time tentang kondisi lahan, ternak, dan perairan, sehingga dapat mengoptimalkan produksi dan efisiensi.
                     </li>
                     <li class="">
-                        <strong>Logistik dan Transportasi</strong> Memantau pergerakan barang dan kendaraan di
-                        daerah yang sulit dijangkau.
+                        <strong>Logistik dan Transportasi</strong> Melacak pergerakan barang dan kendaraan di daerah dengan konektivitas terbatas, meningkatkan efisiensi rantai pasok.
                     </li>
                     <li class="pb-2">
-                        <strong>Kegiatan Sosial dan Kemanusiaan</strong> Membantu masyarakat di daerah terpencil
-                        untuk berkomunikasi dan mengakses informasi penting.
+                        <strong>Kegiatan Sosial dan Kemanusiaan</strong> Mendukung komunikasi dan koordinasi dalam situasi darurat dan program bantuan sosial.
                     </li>
                 </ul>
             </div>
@@ -291,23 +223,16 @@
 
                 <ul class="ml-6 list-decimal text-justify">
                     <li class="pt-2">
-                        <strong>Batasan Duty Cycle</strong> Batasan duty cycle sebesar 1% dapat membatasi kinerja perangkat IoT Meshtastic. Solusi sementara adalah dengan mengoptimalkan penggunaan bandwidth dan mengembangkan protokol komunikasi yang lebih efisien.
-                        Solusi utama yang perlu dipertimbangkan adalah
-                        permohonan kepada pemerintah untuk meningkatkan kapasitas Duty Cycle menjadi 10%, sehingga memberikan nilai manfaat yang lebih optimal dan lebih luas pada perangkat IoT.
+                        <strong>Batasan Duty Cycle</strong> Batasan duty cycle dapat membatasi kinerja dan efisiensi perangkat IoT. Solusi sementara meliputi optimasi bandwidth dan pengembangan protokol komunikasi yang lebih efisien, sementara solusi jangka panjang memerlukan kolaborasi dengan pemerintah untuk menyesuaikan regulasi.
                     </li>
                     <li class="">
-                        <strong>Interoperabilitas</strong> Masalah interoperabilitas antar perangkat IoT masih
-                        menjadi hambatan. Pengembangan standar komunikasi yang seragam dapat membantu mengatasi masalah
-                        ini.
+                        <strong>Interoperabilitas</strong> Memastikan perangkat IoT dari berbagai produsen dapat berkomunikasi satu sama lain (interoperabilitas) sangat penting. Standar komunikasi yang seragam dan kolaborasi antar pemangku kepentingan diperlukan untuk mengatasi tantangan ini.
                     </li>
                     <li class="pb-2">
-                        <strong>Edukasi dan Kesadaran Masyarakat</strong> Masih banyak masyarakat yang belum
-                        memahami manfaat teknologi IoT khususnya Meshtastic. Edukasi dan sosialisasi yang intensif
-                        diperlukan untuk meningkatkan adopsi teknologi ini.
+                        <strong>Edukasi dan Kesadaran Masyarakat</strong> Sosialisasi dan edukasi yang efektif diperlukan untuk meningkatkan pemahaman masyarakat tentang manfaat dan cara penggunaan Meshtastic.
                     </li>
                 </ul>
 
-                <p class="py-2 text-justify">Langkah-langkah progresif perlu dilakukan oleh semua pihak baik individu profesional, masyarakat, swasta, pemerintah dan non pemerintah yang memiliki peran sebagai pendorong utama inovasi di ranah IoT, dengan membuka peluang sebesar-besarnya bagi para pengembang dan inovator untuk membawa Indonesia lebih jauh ke arah era digital yang lebih cerdas dan terkoneksi.</p>
 
             </div>
 
@@ -325,10 +250,7 @@
                 </div>
             </div>
             <div class="container w-full grid grid-cols-1">
-                <p class="py-2 text-justify">Meshtastic berpotensi besar memberikan kontribusi positif dalam meningkatkan komunikasi antar masyarakat di Indonesia, khususnya di daerah terpencil, karena arus komunikasi dapat membangkitkan potensi pasar di wilayah tersebut. Terutama dengan adanya dukungan regulasi frekuensi bebas lisensi dari Kominfo, serta pertumbuhan minat hobi komunitas dan perangkat keras dan asesoris yang beragam, Meshtastic dapat menjadi solusi komunikasi yang efektif dan hemat biaya. Namun, tantangan seperti batasan
-                    teknis dan edukasi masyarakat perlu diatasi untuk memaksimalkan potensi teknologi ini. Dengan
-                    kolaborasi antara profesional, pemerintah, komunitas, dan swasta, Meshtastic dapat menjadi salah satu
-                    pilar penting dalam membangun konektivitas yang merata di Indonesia.</p>
+                <p class="py-2 text-justify">Meshtastic memiliki potensi besar untuk meningkatkan konektivitas di Indonesia, terutama di daerah terpencil. Dukungan regulasi pemerintah, termasuk penyediaan frekuensi LPWA dan izin kelas, serta pertumbuhan komunitas pengguna yang aktif, menjadi faktor pendorong utama. Namun, tantangan teknis dan sosial perlu diatasi melalui kolaborasi antar berbagai pihak. Dengan upaya bersama, Meshtastic dapat menjadi salah satu pilar dalam mewujudkan Indonesia yang lebih terkoneksi dan cerdas.</p>
 
 
             </div>
@@ -339,12 +261,12 @@
 
 
 
-            <div class="container w-full grid grid-cols-1">
+            <div class="hidden container w-full grid grid-cols-1">
                 <div class="flex flex-col items-center gap-1 text-center my-6">
                     <h2 class="!font-extrabold !text-left text-xl">Sumber</h2>
                 </div>
             </div>
-            <div class="container w-full grid grid-cols-1">
+            <div class="hidden container w-full grid grid-cols-1">
 
                 <ul class="ml-6 list-decimal">
                     <li class="py-2">
@@ -365,6 +287,9 @@
                     awal tentang peluang dan tantangan pemanfaatan Meshtastic di Indonesia, serta bagaimana regulasi frekuensi LPWA mendukung pengembangannya. Gambar di bawah memperlihatkan bahwa standar frekuensi untuk aplikasi Meshtastic di hampir semua negara menggunakan frekuensi sekitar 915MHz dan 868MHz.</p>
             </div>
 
+            <div class="container w-full grid grid-cols-1">
+                <p class="py-2 text-justify">Gambar di bawah memperlihatkan bahwa standar frekuensi untuk aplikasi Meshtastic berbagai benua menggunakan frekuensi 433MHz, 868MHz, 915MHz dan 923MHz.</p>
+            </div>
 
             <div class="w-full my-6">
                 <img src="assets/images/band.jpg" alt="Peta Frekuensi Bebas Lisensi Dunia" title="Peta Frekuensi Bebas Lisensi Dunia"
@@ -387,12 +312,12 @@
         <section class="bg-white py-20">
 
             <div class=" items-center gap-3 text-center my-6">
-                <h1 class="text-3xl">Frekuensi 433MHz dan 920-923MHz untuk Meshtastic<a class="hover:text-red-500" href="https://www.youtube.com/watch?v=XNmbpfG006M" target="_blank"><sup>[10]</sup></a></h1>
+                <h1 class="text-3xl">Frekuensi 433MHz dan 923MHz untuk Meshtastic<a class="hover:text-red-500" href="https://www.youtube.com/watch?v=XNmbpfG006M" target="_blank"><sup>[10]</sup></a></h1>
             </div>
 
 
             <div class="container w-full grid grid-cols-1">
-                <p class="py-2">Secara legal, baik frekuensi <strong>433MHz</strong> maupun <strong>920-923MHz</strong>
+                <p class="py-2">Secara legal, baik frekuensi <strong>433MHz</strong> maupun <strong>923MHz</strong>
                     dapat digunakan
                     untuk jaringan mesh. Namun, perdebatan mengenai frekuensi mana yang lebih baik terus berlanjut.
                     Berikut adalah perbandingan mendetail antara kedua frekuensi tersebut:</p>
@@ -409,7 +334,7 @@
                                     ini memiliki <strong>estimated radiative power (ERP)</strong> yang lebih rendah.</p>
                             </li>
                             <li>
-                                <p><strong>920-923MHz</strong>: Frekuensi ini memiliki <strong>ERP yang lebih
+                                <p><strong>923MHz</strong>: Frekuensi ini memiliki <strong>ERP yang lebih
                                         tinggi</strong>, yang berarti sinyalnya lebih kuat namun jarak jangkauan yang lebih pendek dibandingkan frekuensi 433MHz.</p>
                             </li>
                         </ul>
@@ -422,7 +347,7 @@
                                     <strong>distorsi</strong> dan <strong>spurious emissions</strong> bahkan dapat terjadi pada interval setiap beberapa detik yang mana lebih sering dibandingkan pada frekuensi 923MHz.</p>
                             </li>
                             <li>
-                                <p><strong>920-923MHz</strong>: Frekuensi ini menunjukkan sinyal yang lebih pendek dan
+                                <p><strong>923MHz</strong>: Frekuensi ini menunjukkan sinyal yang lebih pendek dan
                                     lebih jarang mengalami gangguan, terutama karena penggunaan sistem <strong>timing
                                         interleaving</strong> dan protokol digital seperti <strong>MQTT</strong> dan
                                     <strong>LoRa</strong>.</p>
@@ -462,7 +387,7 @@
 
             <div class="container w-full grid grid-cols-1">
                 <div class="flex flex-col items-center gap-1 text-center my-6">
-                    <h2 class="!font-extrabold !text-left text-xl">Aktivitas pada Frekuensi 920-923MHz</h2>
+                    <h2 class="!font-extrabold !text-left text-xl">Aktivitas pada Frekuensi 923MHz</h2>
                 </div>
             </div>
             <div class="container w-full grid grid-cols-1">
@@ -524,7 +449,7 @@
                 </div>
             </div>
             <div class="container w-full grid grid-cols-1">
-                <p class="py-2">Baik frekuensi <strong>433MHz</strong> maupun <strong>920-923MHz</strong> memiliki kelebihan dan kekurangan masing-masing. <strong>433MHz</strong> menawarkan jangkauan yang lebih jauh tetapi lebih rentan terhadap gangguan interferensi sistem lama, sementara <strong>920-923MHz</strong> menawarkan sinyal yang lebih kuat dan gangguan yang lebih sedikit, meskipun dengan jangkauan yang lebih terbatas. Pemilihan frekuensi yang tepat tergantung pada kebutuhan spesifik aplikasi dan lingkungan di mana jaringan mesh akan digunakan.</p>
+                <p class="py-2">Baik frekuensi <strong>433MHz</strong> maupun <strong>923MHz</strong> memiliki kelebihan dan kekurangan masing-masing. <strong>433MHz</strong> menawarkan jangkauan yang lebih jauh tetapi lebih rentan terhadap gangguan interferensi sistem lama, sementara <strong>923MHz</strong> menawarkan sinyal yang lebih kuat dan gangguan yang lebih sedikit, meskipun dengan jangkauan yang lebih terbatas. Pemilihan frekuensi yang tepat tergantung pada kebutuhan spesifik aplikasi dan lingkungan di mana jaringan mesh akan digunakan.</p>
             </div>
 
 
