@@ -2193,15 +2193,180 @@
         <section class="py-20">
 
             <div class=" items-center gap-3 text-center my-6">
-                <h1 class="text-4xl">Meshtastic VS Meshcore</h1>
+                <h1 class="text-4xl">Tentang MeshCore</h1>
             </div>
 
 
             <div class="container w-full grid grid-cols-1">
-                <p>Meshtastic dan Meshcore sama-sama merupakan teknologi inovatif yang dirancang untuk memfasilitasi
-                    komunikasi di lingkungan yang menantang di mana jaringan tradisional mungkin tidak dapat diandalkan
-                    atau tidak tersedia. Keduanya memanfaatkan prinsip jaringan mesh, tetapi memiliki fokus dan fungsi
-                    yang berbeda.</p>
+                <p>MeshCore adalah sebuah library C++ portabel yang ringan (lightweight) yang dirancang untuk memungkinkan perutean paket multi-hop pada proyek-proyek embedded menggunakan teknologi LoRa dan radio paket lainnya. Library ini sangat cocok untuk pengembang yang ingin membangun jaringan komunikasi yang tangguh, terdesentralisasi, dan dapat beroperasi tanpa bergantung pada infrastruktur internet.</p>
+
+            </div>
+
+            <div class="container w-full grid grid-cols-1">
+
+                <div class="flex flex-col items-center gap-1 text-center my-6">
+                    <h2 class="!font-extrabold !text-left text-lg">Apa Itu MeshCore?</h2>
+                </div>
+
+                <p class="py-2">MeshCore memungkinkan pengguna untuk mem-flash firmware yang sudah dikompilasi (pre-built binary) menggunakan alat seperti Adafruit ESPTool dan berinteraksi dengan jaringan melalui konsol serial. Dengan MeshCore, pengguna dapat membuat jaringan mesh nirkabel yang mirip dengan Meshtastic dan Reticulum, tetapi dengan fokus pada perutean paket multi-hop yang ringan untuk proyek embedded.</p>
+                <p class="py-2">Berbeda dengan Meshtastic yang lebih ditujukan untuk komunikasi LoRa santai, atau Reticulum yang menawarkan fitur jaringan yang lebih canggih, MeshCore menyeimbangkan antara kesederhanaan dan skalabilitas. Ini membuatnya ideal untuk solusi embedded yang membutuhkan komunikasi jarak jauh melalui perangkat perantara (node), terutama dalam situasi off-grid, darurat, atau taktis di mana infrastruktur komunikasi tradisional tidak tersedia.</p>
+
+                <h2 class="py-2 text-xl font-bold">Fitur Utama MeshCore</h2>
+
+                <ul class="ml-6 list-decimal">
+                    <li>
+                        <strong>Multi-Hop Packet Routing</strong>
+                        <ol class="ml-6 list-disc">
+                            <li>
+                                <p>Perangkat dapat meneruskan pesan melalui beberapa node, memperluas jangkauan komunikasi di luar jangkauan radio tunggal.</p>
+                            </li>
+                            <li>
+                                <p>Mendukung jumlah hop yang dapat dikonfigurasi untuk menyeimbangkan efisiensi jaringan dan mencegah lalu lintas yang berlebihan.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <strong>Dukungan untuk Radio LoRa</strong>
+                        <ol class="ml-6 list-disc">
+                            <li>
+                                <p>Kompatibel dengan perangkat keras berbasis LoRa seperti Heltec, RAK Wireless, dan lainnya.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <strong>Desentralisasi & Tangguh</strong>
+                        <ol class="ml-6 list-disc">
+                            <li>
+                                <p>Tidak memerlukan server atau koneksi internet. Jaringan dapat memperbaiki dirinya sendiri (self-healing).</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <strong>Konsumsi Daya Rendah</strong>
+                        <ol class="ml-6 list-disc">
+                            <li>
+                                <p>Cocok untuk perangkat yang menggunakan baterai atau tenaga surya.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <strong>Mudah Digunakan</strong>
+                        <ol class="ml-6 list-disc">
+                            <li>
+                                <p>Menyediakan aplikasi pre-built yang mudah diinstal dan digunakan.</p>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="container w-full grid grid-cols-1">
+
+                <div class="flex flex-col items-center gap-1 text-center my-6">
+                    <h2 class="!font-extrabold !text-left text-lg">Kegunaan MeshCore</h2>
+                </div>
+
+                <p>MeshCore dapat digunakan dalam berbagai skenario, seperti</p>
+
+                <ol class="ml-6 list-disc">
+                    <li>
+                        <p><strong>Komunikasi Off-Grid:</strong> Tetap terhubung di daerah terpencil tanpa infrastruktur internet.</p>
+                    </li>
+                    <li>
+                        <p><strong>Tanggap Darurat & Pemulihan Bencana:</strong> Membangun jaringan komunikasi instan saat infrastruktur utama down.</p>
+                    </li>
+                    <li>
+                        <p><strong>Aktivitas Luar Ruangan:</strong> Komunikasi saat hiking, camping, atau lomba petualangan.</p>
+                    </li>
+                    <li>
+                        <p><strong>Aplikasi Taktis & Keamanan:</strong> Digunakan dalam operasi militer, penegakan hukum, atau keamanan swasta.</p>
+                    </li>
+                    <li>
+                        <p><strong>Jaringan IoT & Sensor:</strong> Mengumpulkan data dari sensor jarak jauh dan mengirimkannya ke lokasi pusat.</p>
+                    </li>
+                </ol>
+
+            </div>
+
+
+
+
+
+
+            <div class="container w-full grid grid-cols-1">
+
+                <div class="flex flex-col items-center gap-1 text-center my-6">
+                    <h2 class="!font-extrabold !text-left text-lg">Cara Memulai dengan MeshCore</h2>
+                </div>
+
+
+                <ul class="ml-6 list-decimal">
+                    <li>
+                        <strong>Flash Firmware</strong>
+                        <ol class="ml-6 list-disc">
+                            <li>
+                                <p>Unduh firmware bawaan untuk perangkat seperti Heltec V3 dan flash menggunakan Adafruit ESPTool.</p>
+                            </li>
+                            <li>
+                                <p>Untuk pengembang yang ingin memodifikasi firmware, instal PlatformIO di Visual Studio Code.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <strong>Unduh & Buka Repositori MeshCore</strong>
+                        <ol class="ml-6 list-disc">
+                            <li>
+                                <p>Pilih contoh aplikasi yang sesuai, seperti chat, ping, repeater, atau admin.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <strong>Monitor & Berkomunikasi</strong>
+                        <ol class="ml-6 list-disc">
+                            <li>
+                                <p>Gunakan konsol serial (misalnya, Serial USB Terminal di Android) untuk memantau dan berkomunikasi dengan jaringan.</p>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="container w-full grid grid-cols-1">
+
+                <div class="flex flex-col items-center gap-1 text-center my-6">
+                    <h2 class="!font-extrabold !text-left text-lg">Contoh Aplikasi MeshCore</h2>
+                </div>
+
+                <ol class="ml-6 list-disc">
+                    <li>
+                        <p><strong>Terminal Chat:</strong> Komunikasi teks aman antar perangkat.</p>
+                    </li>
+                    <li>
+                        <p><strong>Simple Repeater:</strong> Memperluas jangkauan jaringan dengan meneruskan pesan.</p>
+                    </li>
+                    <li>
+                        <p><strong>Companion Radio:</strong> Digunakan dengan aplikasi chat eksternal melalui BLE atau USB.</p>
+                    </li>
+                    <li>
+                        <p><strong>Room Server:</strong> Server BBS untuk ruang posting.</p>
+                    </li>
+                    <li>
+                        <p><strong>Ping Client/Server:</strong> Contoh dasar komunikasi client/server.</p>
+                    </li>
+                    <li>
+                        <p><strong>Test Admin:</strong> Memantau dan mengelola repeater dari jarak jauh.</p>
+                    </li>
+                </ol>
 
             </div>
 
@@ -2210,8 +2375,50 @@
             <div class="container w-full grid grid-cols-1">
 
                 <div class="flex flex-col items-center gap-1 text-center my-6">
-                    <h2 class="!font-extrabold !text-left text-lg">Meshtastic</h2>
+                    <h2 class="!font-extrabold !text-left text-lg">Kompatibilitas Hardware</h2>
                 </div>
+
+                <ol class="ml-6 list-disc">
+                    <li>
+                        <p><strong>Heltec V3 LoRa Boards</strong></p>
+                    </li>
+                    <li>
+                        <p><strong>RAK4631</strong></p>
+                    </li>
+                    <li>
+                        <p><strong>XiaoS3 WIO (sx1262 combo)</strong></p>
+                    </li>
+                    <li>
+                        <p><strong>XiaoC3 (plus external sx126x module)</strong></p>
+                    </li>
+                    <li>
+                        <p><strong>LilyGo T3S3</strong></p>
+                    </li>
+                    <li>
+                        <p><strong>Heltec T114</strong></p>
+                    </li>
+                    <li>
+                        <p><strong>Station G2</strong></p>
+                    </li>
+                </ol>
+
+            </div>
+
+
+
+            <div class="container w-full grid grid-cols-1">
+
+                <div class="flex flex-col items-center gap-1 text-center my-6">
+                    <h2 class="!font-extrabold !text-left text-lg">Meshtastic VS Meshcore</h2>
+                </div>
+
+                    <p>Meshtastic dan Meshcore sama-sama merupakan teknologi inovatif yang dirancang untuk memfasilitasi
+                        komunikasi di lingkungan yang menantang di mana jaringan tradisional mungkin tidak dapat diandalkan
+                        atau tidak tersedia. Keduanya memanfaatkan prinsip jaringan mesh, tetapi memiliki fokus dan fungsi
+                        yang berbeda.</p>
+    
+    
+                <h2 class="py-2 text-xl font-bold">Meshtastic</h2>
 
                 <ol class="ml-6 list-disc">
                     <li>
@@ -2241,9 +2448,8 @@
 
             <div class="container w-full grid grid-cols-1">
 
-                <div class="flex flex-col items-center gap-1 text-center my-6">
-                    <h2 class="!font-extrabold !text-left text-lg">Meshcore</h2>
-                </div>
+
+                <h2 class="py-2 text-xl font-bold">Meshcore</h2>
 
                 <ol class="ml-6 list-disc">
                     <li>
